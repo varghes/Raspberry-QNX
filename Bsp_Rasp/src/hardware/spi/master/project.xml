@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<module name="spi-master">
+  <classification>Driver</classification>
+  <description>
+    <short>SPI Master</short>
+    <abstract><![CDATA[
+                controllers.
+            ]]></abstract>
+  </description>
+  <supports>
+    <availability>
+      <cpu isa="arm">
+        <byteOrder>le</byteOrder>
+      </cpu>
+      <cpu isa="sh">
+        <byteOrder>le</byteOrder>
+      </cpu>
+      <cpu isa="ppc">
+        <byteOrder>be</byteOrder>
+      </cpu>
+    </availability>
+  </supports>
+  <contents>
+    <component id="spi-master" generated="true">
+      <location basedir="arm/le">spi-master</location>
+      <location basedir="sh/le">spi-master</location>
+      <location basedir="ppc/be">spi-master</location>
+    </component>
+  </contents>
+  <requires>
+    <part build="true" location="lib/spi-master"/>
+  </requires>
+</module>

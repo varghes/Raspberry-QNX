@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<module name="input">
+	<type>Element</type>
+	<classification>Driver</classification>
+
+	<description>
+	        <short>Input Library</short>
+	        <abstract>
+	                <![CDATA[The QNX Input Library.]]>
+	        </abstract>
+	</description>
+
+
+	<supports>
+                <availability>
+			<cpu isa="sh">
+			        <byteOrder>le</byteOrder>
+			</cpu>
+			<cpu isa="arm">
+			        <byteOrder>le</byteOrder>
+			</cpu>
+			<cpu isa="ppc">
+			        <byteOrder>be</byteOrder>
+			</cpu>
+			<cpu isa="ppc">
+				<byteOrder>be.spe</byteOrder>
+			</cpu>
+			<cpu isa="mips">
+			        <byteOrder>be</byteOrder>
+			        <byteOrder>le</byteOrder>
+			</cpu>
+			<cpu isa="x86"/>
+                </availability>
+        </supports>
+
+	<source available="false">
+		<location>.</location>
+	</source>
+	<GroupOwner>hw</GroupOwner>
+	<RuntimeComponent>Neutrino RTOS</RuntimeComponent>
+
+
+	<contents>
+		<component id="SharedArchive" generated="true">
+		        <kind type="library"/>
+		        <location runtime="false" basedir="nto/{cpu}/a.o{.:endian}.shared">libinputS.a</location>
+		</component>
+
+		<component id="Archive" generated="true">
+		        <kind type="library"/>
+		        <location runtime="false" basedir="nto/{cpu}/a.o{.:endian}">libinput.a</location>
+		</component>
+	</contents>
+
+    <requires>
+        <part build="true" rootMacro="DEVI_ROOT" location="hardware/devi"/>
+        <part build="true" rootMacro="KEYMAP_ROOT" location="hardware/devi/keymap"/>
+    </requires>
+
+</module>
+

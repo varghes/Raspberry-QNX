@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<module name="devg-bcm2835">
+	<type>Element</type>
+	<classification>Driver</classification>
+
+	<description>
+			<short>Graphics Driver for the BCM2835 chipset</short>
+	        <abstract>
+				<![CDATA[The devg-bcm2835 shared object is responsible for configuring and operating the graphics device on the BCM2835 board.]]>
+	        </abstract>
+	</description>
+
+	<supports>
+		<availability>
+			<cpu isa="arm"><byteOrder>le</byteOrder></cpu>
+			<cpu isa="x86"/>
+		</availability>
+	</supports>
+
+	<source available="false">
+		<location type="">.</location>
+	</source>
+	<GroupOwner>gui</GroupOwner>
+	<RuntimeComponent>Neutrino RTOS</RuntimeComponent>
+
+
+	<contents>
+		<component id="bcm2835" generated="true">
+			<location basedir="{os}/{cpu}/dll{.:endian}"
+				 runtime="true">devg-bcm2835.so</location>
+		</component>
+	</contents>
+
+	<requires>
+		<part build="true" location="lib/ffb"/>
+		<part build="true" location="lib/disputil"/>
+		<part build="false" location="hardware/devg"/>
+	</requires>
+
+</module>

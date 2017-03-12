@@ -1,0 +1,57 @@
+%C [general_opts] protocol* [protocol_opts]* device* [device_opts]*
+
+%C : Sample Input Manager for Photon
+
+
+General opts:
+ -d device               (default /dev/photon | PHOTON env var)
+ -g input group          (default 1)
+ -v increment verbosity  (default 0)
+ -l list                 List the internal modules.  Modules are listed in
+                         the following format:
+
+                           module name | date last compiled | revision | class
+                           where: class is comprised of (D)evice and/or 
+                                  (P)rotocol and/or (F)ilter
+
+Useage
+
+ %C touch [touch_opts] abs [abs_opts]
+
+
+protocol/device module and it's options:
+
+ samp_dev          Sample Device
+  -i irq           IRQ for sample device (default 179).
+  -a ioport        Port of sample device (default 0x1000F000).
+  -p priority      Pulse priority for the interrupt handling thread (default 21).
+  -D delay         Millisecond delay between interrupts (default 75).
+
+                      Note:  Too low a value will cause a large amount of interrupts
+                      and will deny other applications CPU time.
+
+  -d delay         Millisecond delay timer for injected release events (default 100).
+
+                      Note: Too low a value will cause releases inbetween presses.
+
+  -v               Verbosity, added v's means more verbosity.
+
+filter module and it's options:
+
+ abs               Transform and compresses absolute coordinate "touch" events
+  -b               Touching the screen is a right mouse button (default left)
+  -c               Calibrate mode - don't transform coordinates
+  -f filename      Calibration file name
+  -o x,y           Origin of display region (default, origin of graphics region)
+  -s x,y           Coordinates of lower right corner of display region
+                   (default, width and height of graphics region)
+
+
+
+E.g. devi-at91sam9xx touch
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle/lib/dll/
+INSTALLNAME=devg-bcm2835.so
+NAME=devg-bcm2835.so
+USER=admin
+HOST=DESKTOP-9RD67Q2
+DATE=2016/12/21-20:09:23-IST
+DESCRIPTION=Graphics driver dll for BCM2835 chipset - loaded by io-graphics

@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle/boot/sys/
+INSTALLNAME=startup-bcm2835
+NAME=startup-bcm2835
+USER=admin
+HOST=DESKTOP-9RD67Q2
+DATE=2017/03/12-22:33:01-IST
+DESCRIPTION=arm bcm2835 startup

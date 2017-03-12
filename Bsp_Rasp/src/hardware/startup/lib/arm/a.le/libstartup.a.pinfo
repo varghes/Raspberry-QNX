@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle/usr/lib/
+INSTALLNAME=libstartup.a
+NAME=libstartup.a
+USER=admin
+HOST=DESKTOP-9RD67Q2
+DATE=2016/12/21-20:11:03-IST
+DESCRIPTION=startup library

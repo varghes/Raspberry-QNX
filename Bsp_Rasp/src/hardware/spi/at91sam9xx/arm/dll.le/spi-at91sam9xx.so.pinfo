@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle/lib/dll/
+INSTALLNAME=spi-at91sam9xx.so
+NAME=spi-at91sam9xx.so
+USER=admin
+HOST=DESKTOP-9RD67Q2
+DATE=2016/12/21-20:10:06-IST
+DESCRIPTION=AT91SAM9XX SPI driver

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<module name="libstartup">
+	<type>Element</type>
+	<classification>SDK</classification>
+
+	<description>
+	        <short>Startup Library</short>
+	        <abstract>
+	                <![CDATA[The startup library (libstartup.a) contains generic code which is used to prepare a "QNX environment" on a system, prior to the loading of the QNX microkernel (procnto). Some of the code is completely system and platform independent, and is tightly coupled to the way that the kernel operates. Other code is hardware specific, and some of those routines are available to the kernel at runtime, in the form of "kernel callouts". In this sense, the startup library acts as an abstraction layer between the kernel and the hardware, so that the kernel can be kept free of hardware specific code.]]>
+	        </abstract>
+	</description>
+
+	<supports>
+		<availability ref="ostargets"/>
+		<availability supported="false">
+                	 <cpu isa="ppc"><byteOrder>be.spe</byteOrder></cpu>
+                </availability>
+                	</supports>
+
+	<source available="false">
+		<location type="">.</location>
+	</source>
+	<GroupOwner>os</GroupOwner>
+	<RuntimeComponent>Neutrino RTOS</RuntimeComponent>
+
+
+	<contents>
+
+		<component id="Archive" generated="true">
+		<kind type="library"/>
+                        <location basedir="{cpu}/a{.:endian}" runtime="false">
+                                libstartup.a
+                        </location>
+                </component>
+		<component id="startup-headers" basedir="public">
+			<kind type="header"/>
+			<source>
+			<location subdirs="false" runtime="false">arm</location>
+			<location subdirs="false" runtime="false">mips</location>
+			<location subdirs="false" runtime="false">sh</location>
+			<location subdirs="false" runtime="false">ppc</location>
+			<location subdirs="false" runtime="false">x86</location>
+			<location subdirs="false" runtime="false">hw</location>
+			<location subdirs="false" runtime="false">sys</location>
+			</source>
+		</component>
+	</contents>
+
+<!--
+	<requires>
+		<part build="false" location="services/system"/>
+	</requires>
+-->
+</module>

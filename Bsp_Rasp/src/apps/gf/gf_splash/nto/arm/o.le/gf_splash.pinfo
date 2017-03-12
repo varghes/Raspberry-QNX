@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle/usr/bin/
+INSTALLNAME=gf_splash
+NAME=gf_splash
+USER=admin
+HOST=DESKTOP-9RD67Q2
+DATE=2016/12/21-20:11:30-IST
+DESCRIPTION=Graphics Framework splash screen app

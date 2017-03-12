@@ -1,0 +1,30 @@
+%C Driver for ATMEL AT91SAM9XX EMAC Ethernet controllers
+
+Syntax:
+  io-pkt-vX -d at91sam9xx mac=XXXXXXXXXXXX [option[,option ...]] ... &
+
+Options (to override autodetected defaults):
+  duplex=0|1          Half (0) or full (1) duplex mode.  Default auto-detect.
+                      Also can use ifconfig -m and ifconfig emacX media to set.
+  fifo=num            Sets the transmit FIFO threshold to num.
+  kermask=0|1         (1) Use kernel interrupt masking methodology 
+                      (0) manually mask the nic in the interrupt handler
+  mac=XXXXXXXXXXXX    MAC address of the controller.  Used when the syspage
+                      option is NOT used.    
+  nomulticast         Disable multicast support.
+  phy_addr=X          PHY address that en0 has.
+  receive=X           Set number of receive descriptors. Default 512.
+  sram_addr=X         Set the SRAM address for descriptor buffers. Default 0x300000.
+  sram_size=X         Set the SRAM size. Default 0x100000.
+  syspage             Read hardware parameters (IRQs, MAC, base register 
+                      address and PHY address) for all devices from system
+                      page.  If this option is NOT used, you must use the
+                      mac=X option.
+  transmit=X          Set number of transmit descriptors. Default 1024.
+  verbose=X           Bigger X value yields increased diagnostic output.
+
+Examples:
+  # Start v4 TCP/IP io-pkt using the at91sam9xx driver:
+  io-pkt-v4 -d at91sam9xx syspage
+  ifconfig emac0 10.184
+

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SearchDialog.ScopePart">
+		<item key="scope" value="0"/>
+	</section>
+	<section name="DialogBounds_SearchDialog">
+		<item key="DIALOG_X_ORIGIN" value="704"/>
+		<item key="DIALOG_HEIGHT" value="428"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_Y_ORIGIN" value="103"/>
+		<item key="DIALOG_WIDTH" value="564"/>
+	</section>
+	<section name="Search">
+		<list key="Search.enabledPageIds">
+			<item value="org.eclipse.search.internal.ui.text.TextSearchPage"/>
+			<item value="org.eclipse.cdt.ui.pdomSearchPage"/>
+			<item value="com.qnx.tools.ide.SystemProfiler.ui.search"/>
+		</list>
+		<list key="Search.processedPageIds">
+			<item value="org.eclipse.search.internal.ui.text.TextSearchPage"/>
+			<item value="org.eclipse.cdt.ui.pdomSearchPage"/>
+			<item value="com.qnx.tools.ide.SystemProfiler.ui.search"/>
+		</list>
+	</section>
+	<section name="">
+		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.pdomSearchViewPage">
+	</section>
+	<section name="TextSearchPage">
+		<item key="HISTORY_SIZE" value="12"/>
+		<item key="CASE_SENSITIVE" value="false"/>
+		<item key="SEARCH_DERIVED" value="false"/>
+		<item key="REG_EX_SEARCH" value="false"/>
+		<section name="HISTORY4">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="debug_devices"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.c"/>
+				<item value="*.h"/>
+			</list>
+		</section>
+		<section name="HISTORY9">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="no host controller"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.c"/>
+				<item value="*.h"/>
+			</list>
+		</section>
+		<section name="HISTORY0">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="bcm2835_init"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.c"/>
+				<item value="*.C"/>
+				<item value="*.h"/>
+				<item value="*.S"/>
+			</list>
+		</section>
+		<section name="HISTORY10">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="xpt_configure"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.c"/>
+				<item value="*.h"/>
+			</list>
+		</section>
+		<section name="HISTORY5">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="_SLOGC_SIM_MMC"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.c"/>
+				<item value="*.h"/>
+			</list>
+		</section>
+		<section name="HISTORY2">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="init_bcm2835_debug"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.c"/>
+				<item value="*.h"/>
+			</list>
+		</section>
+		<section name="HISTORY7">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="hsmci_init"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.c"/>
+				<item value="*.h"/>
+			</list>
+		</section>
+		<section name="HISTORY3">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="display_char_bcm2835"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.c"/>
+				<item value="*.h"/>
+			</list>
+		</section>
+		<section name="HISTORY11">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="mci_init"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.c"/>
+				<item value="*.h"/>
+			</list>
+		</section>
+		<section name="HISTORY6">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="IOPort_Base"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.c"/>
+				<item value="*.h"/>
+			</list>
+		</section>
+		<section name="HISTORY1">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="init_smp"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.c"/>
+				<item value="*.h"/>
+			</list>
+		</section>
+		<section name="HISTORY8">
+			<item key="isRegExSearch" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="ignoreCase" value="true"/>
+			<item key="textPattern" value="bs_init"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.c"/>
+				<item value="*.h"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.search.text.FileSearchResultPage">
+		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
+	</section>
+	<section name="">
+		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
+	</section>
+</section>

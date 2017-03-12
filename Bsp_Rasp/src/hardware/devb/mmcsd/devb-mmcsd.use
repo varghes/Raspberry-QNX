@@ -1,0 +1,27 @@
+%C MMCSD Driver.
+
+Syntax:
+devb-mmcsd-<variant> [cam cam_options][mmcsd mmcsd_options...][blk io-blk_options...] &
+
+Options:  All options are separated by commas.
+
+cam options: 
+    quiet       Be quiet: don't display any information on startup. 
+    verbose     Be verbose: display full information about units (devices)
+                on startup.
+
+mmcsd  options:
+    pio         Uses PIO mode for read/write.
+    clock       Operation clock
+    bw          Bus width
+    bs          Board specific options.
+    noac12      Disable hardware auto command 12
+    nohs        Disable high speed support
+    maxsg       Maximum SG number if SGDMA is supported
+    normv       Raw device entry alway exists (default none)
+    slot        specify the slot name
+    cmdlog=num  specify log level of logging command send
+                to the card, default is level 0, which will 
+                disable command logging.
+    The mmcsd options control the drivers interface to MMCSD.
+

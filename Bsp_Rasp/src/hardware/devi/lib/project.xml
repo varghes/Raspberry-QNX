@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<module name="input">
+  <classification>Driver</classification>
+  <description>
+    <short>Input Library</short>
+    <abstract><![CDATA[
+	                The QNX Input Library.
+	        ]]></abstract>
+  </description>
+  <supports>
+    <availability>
+      <cpu isa="sh">
+        <byteOrder>le</byteOrder>
+      </cpu>
+      <cpu isa="arm">
+        <byteOrder>le</byteOrder>
+      </cpu>
+      <cpu isa="ppc">
+        <byteOrder>be</byteOrder>
+      </cpu>
+      <cpu isa="ppc">
+        <byteOrder>be.spe</byteOrder>
+      </cpu>
+      <cpu isa="mips">
+        <byteOrder>be</byteOrder>
+        <byteOrder>le</byteOrder>
+      </cpu>
+      <cpu isa="x86"/>
+    </availability>
+  </supports>
+  <contents>
+    <component id="SharedArchive" generated="true">
+      <location basedir="nto/sh/a.o.le.shared">libinputS.a</location>
+      <location basedir="nto/arm/a.o.le.shared">libinputS.a</location>
+      <location basedir="nto/ppc/a.o.be.shared">libinputS.a</location>
+      <location basedir="nto/mips/a.o.be.shared">libinputS.a</location>
+      <location basedir="nto/mips/a.o.le.shared">libinputS.a</location>
+      <location basedir="nto/x86/a.o.shared">libinputS.a</location>
+    </component>
+    <component id="Archive" generated="true">
+      <location basedir="nto/sh/a.o.le">libinput.a</location>
+      <location basedir="nto/arm/a.o.le">libinput.a</location>
+      <location basedir="nto/ppc/a.o.be">libinput.a</location>
+      <location basedir="nto/mips/a.o.be">libinput.a</location>
+      <location basedir="nto/mips/a.o.le">libinput.a</location>
+      <location basedir="nto/x86/a.o">libinput.a</location>
+    </component>
+  </contents>
+  <requires>
+    <part build="true" rootMacro="DEVI_ROOT" location="hardware/devi"/>
+    <part build="true" rootMacro="KEYMAP_ROOT" location="hardware/devi/keymap"/>
+  </requires>
+</module>

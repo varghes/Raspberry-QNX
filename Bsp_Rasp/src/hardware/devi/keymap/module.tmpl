@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<module name="keymap">
+	<type>Element</type>
+	<classification>Driver</classification>
+
+	<description>
+	        <short>Keymap Library</short>
+	        <abstract>
+	                <![CDATA[The QNX Keymap Library.]]>
+	        </abstract>
+	</description>
+
+
+	<supports>
+                <availability>
+			<cpu isa="sh">
+			        <byteOrder>le</byteOrder>
+			</cpu>
+			<cpu isa="arm">
+			        <byteOrder>le</byteOrder>
+			</cpu>
+			<cpu isa="ppc">
+			        <byteOrder>be</byteOrder>
+			</cpu>
+			<cpu isa="ppc">
+				<byteOrder>be.spe</byteOrder>
+			</cpu>
+			<cpu isa="mips">
+			        <byteOrder>be</byteOrder>
+			        <byteOrder>le</byteOrder>
+			</cpu>
+			<cpu isa="x86"/>
+                </availability>
+        </supports>
+
+	<source available="false">
+		<location>.</location>
+	</source>
+	<GroupOwner>hw</GroupOwner>
+	<RuntimeComponent>Neutrino RTOS</RuntimeComponent>
+
+
+	<contents>
+		<component id="SharedArchive" generated="true">
+		        <kind type="library"/>
+		        <location runtime="false" basedir="nto/{cpu}/a.o{.:endian}.shared">libkeymapS.a</location>
+		</component>
+
+		<component id="Archive" generated="true">
+		        <kind type="library"/>
+		        <location runtime="false" basedir="nto/{cpu}/a.o{.:endian}">libkeymap.a</location>
+		</component>
+	</contents>
+
+    <requires>
+        <part build="true" rootMacro="DEVI_ROOT" location="hardware/devi"/>
+    </requires>
+
+</module>
+

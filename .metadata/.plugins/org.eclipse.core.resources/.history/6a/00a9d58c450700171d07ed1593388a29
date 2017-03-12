@@ -1,0 +1,527 @@
+###########################################################################
+
+## Neutrino 6.5 on the Raspberry Pi Board - BCM2835
+## 1.Raspberry PI B+ Support added & working
+##
+###########################################################################
+##
+## SUPPORTED DEVICES:
+##
+## SERIAL:   Debug
+## I2C:      To be added //
+## SPI:      Serial Peripheral Interface (SPI)
+## MMC/SD:   High Speed MultiMedia Card Interface (HSMCI)
+## USB Host: Not added
+## RTC:      Real-time Clock
+## AUDIO:    AC97 Controller
+## TOUCH SCREEN: Touch Screen ADC Controller
+## GRAPHICS: LCD Controller (LCDC) 
+## Ethernet: Not added
+## 
+##
+##  - For detailed instructions on the default example configuration for
+##    these devices see the "CONFIGURING ON-BOARD SUPPORTED HARDWARE"
+##    section below the build script section, or refer to the BSP docs.
+##  - Tip: Each sub-section which relates to a particular device is marked
+##         with its tag (ex. SERIAL). You can use the search features of
+##         your editor to quickly find and add or remove support for
+##         these devices.
+##  - For details on how build files work, please refer to the help
+##    documentation for "mkifs" in the QNX Neutrino "Utilities Reference".
+## 
+###########################################################################
+##
+## NOTES:
+##
+###########################################################################
+
+###########################################################################
+## START OF BUILD SCRIPT
+###########################################################################
+
+##[image=0x00200000 ] 0x00008000
+[image=0x00200000 ]
+#[+compress] 
+
+[virtual=armle,raw] .bootstrap = {
+    startup-bcm2835 -r 0x002dd0000,0x200000,1 -vvvvvvv
+
+    #######################################################################
+    ## PATH set here is the *safe* path for executables.
+    ## LD_LIBRARY_PATH set here is the *safe* path for libraries.
+    ##     i.e. These are the paths searched by setuid/setgid binaries.
+    ##          (confstr(_CS_PATH...) and confstr(_CS_LIBPATH...))
+    ## Use the instrumented kernel by default (*-instr).
+    #######################################################################  
+    PATH=:/proc/boot:/bin:/usr/bin:/usr/photon/bin LD_LIBRARY_PATH=:/proc/boot:/lib:/usr/lib:/lib/dll PHOTON_PATH=/usr/photon procnto-v6
+     #PATH=:/proc/boot:/bin:/usr/bin:/usr/photon/bin LD_LIBRARY_PATH=:/proc/boot:/lib:/usr/lib:/lib/dll PHOTON_PATH=/usr/photon procnto-v6-instr -vvvvvvv
+     
+     }
+[+script] .script = {
+    ## Initialise the console
+    procmgr_symlink ../../proc/boot/libc.so.3 /usr/lib/ldqnx.so.2
+
+
+   display_msg Welcome to QNX Neutrino 6.5 on the Raspberry pi
+
+   
+    #######################################################################
+    ## Start some common servers
+    #######################################################################
+    display_msg Starting slogger and pipe servers...
+    slogger 
+    pipe 
+
+
+    #######################################################################
+    ## DBGU SERIAL driver / buard rate hardcoded
+    #######################################################################
+    display_msg Starting DBGU driver...
+    devc-serdebug -e -F -S -b115200 -c133000000 0x20201000,1
+    waitfor /dev/ser1 4
+    display_msg opening ...
+    reopen /dev/ser1
+    display_msg Serial opened...
+
+
+ #removed for QT support   
+ #   PHOTON=/dev/photon
+#	PHOTON_PATH=/usr/photon
+#	PHOTON_PATH2=/usr/photon
+#	PHFONT=/dev/phfont
+#	MMEDIA_MIDI_CFG=/etc/config/media/midi.cfg
+	
+#QT added
+# PHOTON=/dev/photon	
+ QWS_DISPLAY=qnx
+  QWS_KEYBOARD=qnx
+QWS_MOUSE_PROTO=qnx
+ XDG_CONFIG_HOME=/tmmp
+TMPDIR=/tmmp
+	    #######################################################################
+    ## These env variables are inherited by all the programs which follow
+    #######################################################################
+    SYSNAME=nto
+    #SHELL=/bin/ksh
+    #SHELL=/bin/sh
+    TERM=qansi
+    HOME=/
+    PATH=:/proc/boot:/bin:/usr/bin:/opt/bin:/usr/photon/bin
+	LD_LIBRARY_PATH=:/proc/boot:/lib:/usr/lib:/lib/dll:/opt/lib
+    
+    #######################################################################
+	## GRAPHICS driver
+	## if you want to run gf_splash,egl-gears-lite ,QT
+	## dont start photon , io-graphics , phfont
+	#######################################################################
+
+#	 display_msg Starting photon...       
+#	 Photon &
+#     waitfor /dev/photon 2
+     
+     display_msg Starting graphics driver
+	 io-display  -dvid=0,did=0
+	 waitfor /dev/io-display 2
+	  
+#	display_msg Starting io-graphics...    
+#	io-graphics 
+	
+#    display_msg waiting phfont...          
+#	waitfor /dev/phfont 2
+
+	display_msg Starting Touchscreen driver...
+    #devi-at91sam9xx touch -a 0xfffb0000 &
+    #waitfor /dev/devi 4 
+	
+
+	#pwm &
+    #pterm -x10 -y10 -h230 -w200 -t"QNX 6.4.0" -K 03 &
+    #devc-pty &
+	#######################################################################
+    ## SPI driver
+    #######################################################################
+    #display_msg Starting SPI0 driver...
+    #spi-master -d at91sam9xx base=0xFFFA4000,irq=14,clock=133000000
+	
+	#######################################################################
+    ## SD/MMC Driver
+    #######################################################################
+    #display_msg Starting SD/MMC driver on interface 1...
+    #devb-mmcsd-at91sam9g45 blk automount=sda0@dos:/fs/sda:dos:exe=system mmcsd ioport=0xFFF80000,irq=11,bs=port=0,bw=4 disk name=sda   
+
+    #display_msg Starting SD/MMC driver on interface 2...
+    #devb-mmcsd-at91sam9g45 blk automount=sdb0@dos:/fs/sdb:dos:exe=system mmcsd ioport=0xFFFD0000,irq=29,bs=port=1,bw=4 disk name=sdb
+
+    #######################################################################
+    ## I2C driver
+    #######################################################################
+    #display_msg Starting i2c1 driver...
+    #i2c-at91sam9xx -p0xFFF84000 -i12 -c133000000 --u0
+    #display_msg Starting i2c2 driver...
+    #i2c-at91sam9xx -p0xFFF88000 -i13 -c133000000 --u1
+    
+    #######################################################################
+    ## Momentics remote target service
+    #######################################################################
+    display_msg Init over...
+    #qconn
+    #play with some shell commands 
+    #ls
+	#######################################################################
+	## Graphics Application
+	####################################################################### 
+	#display_msg  starting gf_splash...
+    #gf_splash /usr/share/backdrops/1024x768/neutrino_02_1024x768.jpg
+    #gf_splash /usr/share/backdrops/1024x768/default.jpg
+	#egl-gears-lite -layer=2 -width=300 -height=300 &
+    
+    #devc-pty
+    #bkgdmgr
+    #pwm &
+    #shelf&
+    #phcalc
+    #Pterm
+    # display_msg Starting Touchscreen driver...
+    # devi-at91sam9xx touch 
+
+[+session] ksh &
+
+}
+
+## Redirect console messages
+[type=link] /bin/sh=/proc/boot/ksh
+[type=link] /dev/console=/dev/ser1
+[type=link] /tmp=/dev/shmem
+[type=link] /var/log=/tmp
+[type=link] /usr/tmp=/tmp
+
+## Programs require the runtime linker (ldqnx.so) to be at a fixed location
+
+# standard libs 
+libc.so
+libm.so
+
+libcam.so
+io-blk.so
+cam-disk.so
+cam-cdrom.so
+fs-qnx6.so
+fs-qnx4.so
+fs-dos.so
+fs-udf.so
+fs-cd.so
+
+###########################################################################
+## QT Library
+###########################################################################
+libQtGui.so.4
+libQtCore.so.4
+libQtNetwork.so.4
+libcpp.so.4
+libz.so.2
+libstdc++.so.6
+###########################################################################
+## Touchscreen driver
+###########################################################################
+devi-at91sam9xx
+[+raw perms=+x] calib
+/etc/system/config/calib.localhost = {
+0x0:419x271:179328 13824 -26606112 11903 114099 -24013198 325266
+}
+###########################################################################
+## I2C driver
+###########################################################################
+i2c-at91sam9xx
+###########################################################################
+## SPI driver
+###########################################################################
+spi-at91sam9xx.so
+###########################################################################
+## SD/MMC driver
+###########################################################################
+
+#devb-mmcsd-at91sam9g45
+libcam.so
+fs-dos.so
+fs-qnx4.so
+fs-ext2.so
+cam-disk.so
+io-blk.so
+
+
+###########################################################################
+## uncomment for graphics driver
+###########################################################################
+devg-bcm2835.so
+libGLES_CL.so
+libGLES_CM.so
+libffb.so
+libgf.so
+devg-soft3d-fixed.so
+libFF-T2K.so.2
+libm.so.2
+devg-soft3d.so
+
+
+[data=copy]
+[data=c]
+
+###########################################################################
+## Debug driver
+###########################################################################
+devc-serdebug
+#/bin/stty=stty
+#devc-pty
+qconn
+/usr/bin/pdebug=pdebug
+
+fs-cifs
+fs-nfs3
+ftp
+inetd
+/usr/sbin/telnetd=telnetd
+/usr/sbin/ftpd=ftpd
+/bin/login=login
+/usr/bin/touch=touch
+
+io-pkt-v4
+nicinfo
+ifconfig
+ping
+cat
+netstat
+fs-cifs
+ftp
+telnet
+tcpdump
+
+###########################################################################
+## NETWORK driver
+###########################################################################
+libsocket.so
+librpc.so
+libcrypto.so
+
+
+###########################################################################
+## Image Loading
+###########################################################################
+libimg.so
+# img_codec_bmp.so
+# img_codec_gif.so
+img_codec_jpg.so
+# img_codec_png.so
+# img_codec_sgi.so
+# img_codec_tga.so
+
+###########################################################################
+## Font loading
+###########################################################################
+/lib/dll/font/ttfFFcore.so = ${QNX_TARGET}/armle/lib/dll/font/ttfFFcore.so
+/lib/dll/font/PHFcore.so = ${QNX_TARGET}/armle/lib/dll/font/PHFcore.so
+/lib/dll/font/FCcore.so = ${QNX_TARGET}/armle/lib/dll/font/FCcore.so
+
+libFF-T2K.so
+libblkcache.so
+phfont.so
+libfont.so
+libgf.so   
+###########################################################################
+## Photon libs 
+###########################################################################
+libph.so
+libAp.so
+libphexlib.so 
+###########################################################################
+## io-graphics libs 
+###########################################################################
+libphrender.so
+libffb.so
+libdisputil.so
+libimg.so.1
+#shelf depend
+libecpp-ne.so.4
+
+
+##########################################################################
+## curses support (e.g. for more)
+##########################################################################
+#/etc/termcap=${QNX_TARGET}/etc/termcap
+/usr/lib/terminfo/a=${QNX_TARGET}/usr/lib/terminfo/a
+/usr/lib/terminfo/q=${QNX_TARGET}/usr/lib/terminfo/q
+/usr/lib/terminfo/v=${QNX_TARGET}/usr/lib/terminfo/v
+/usr/lib/terminfo/x=${QNX_TARGET}/usr/lib/terminfo/x
+
+###########################################################################
+## Graphics driver
+###########################################################################
+# Include Photon Binaries
+Photon
+/usr/photon/config/bcm2835.conf=bcm2835.conf
+/etc/system/config/img.conf=${QNX_TARGET}/etc/system/config/img.conf
+/etc/system/config/display.conf=display.conf
+io-display
+io-graphics
+
+# Include photon font files
+/usr/photon/font_repository/fontdir = {
+#;
+#; fontdir configuration file
+#;
+phcursor,.phf,Photon Cursor,0,,E900-E921,Np,32x31,3K
+primasansmonobts,0@tt2009m_.ttf,PrimaSansMono BT,0,,0020-F002,f,79x170,109K
+}
+
+#/usr/photon/font_repository/fontext = ${QNX_TARGET}/usr/photon/font_repository/fontext
+/usr/photon/font_repository/fontext = {
+#;
+#; fontext configuration file
+#;
++normal = primasansmonobts, phcursor
+}
+
+#/usr/photon/font_repository/fontmap = ${QNX_TARGET}/usr/photon/font_repository/fontmap
+/usr/photon/font_repository/fontmap = {
+#;
+#; fontmap configuration file
+#;
+? = primasansmonobts
+}
+
+
+/usr/photon/font_repository/fontopts = ${QNX_TARGET}/usr/photon/font_repository/fontopts
+/usr/photon/font_repository/pcterm12.phf = ${QNX_TARGET}/usr/photon/font_repository/pcterm12.phf
+/usr/photon/font_repository/pcterm14.phf = ${QNX_TARGET}/usr/photon/font_repository/pcterm14.phf
+/usr/photon/font_repository/pcterm20.phf = ${QNX_TARGET}/usr/photon/font_repository/pcterm20.phf
+/usr/photon/font_repository/phcursor.phf = ${QNX_TARGET}/usr/photon/font_repository/phcursor.phf
+/usr/photon/font_repository/tt2001m_.ttf = ${QNX_TARGET}/usr/photon/font_repository/tt2001m_.ttf
+/usr/photon/font_repository/tt2002m_.ttf = ${QNX_TARGET}/usr/photon/font_repository/tt2002m_.ttf
+/usr/photon/font_repository/tt2003m_.ttf = ${QNX_TARGET}/usr/photon/font_repository/tt2003m_.ttf
+/usr/photon/font_repository/tt2004m_.ttf = ${QNX_TARGET}/usr/photon/font_repository/tt2004m_.ttf
+/usr/photon/font_repository/tt2009m_.ttf = ${QNX_TARGET}/usr/photon/font_repository/tt2009m_.ttf
+/usr/photon/font_repository/tt2011m_.ttf = ${QNX_TARGET}/usr/photon/font_repository/tt2011m_.ttf
+
+# Include photon palette file
+/usr/photon/palette/default.pal = ${QNX_TARGET}/usr/photon/palette/default.pal
+
+# Include keyboard mapping file
+/usr/photon/keyboard/en_US_101.kbd = ${QNX_TARGET}/usr/photon/keyboard/en_US_101.kbd
+
+## example pwm and bkgdmgr config 
+/usr/photon/config/wm/wm.cfg = ${QNX_TARGET}/usr/photon/config/wm/wm.cfg
+/usr/photon/config/wm/wm.menu= ${QNX_TARGET}/usr/photon/config/wm/wm.menu 
+/usr/photon/config/crtc-settings= ${QNX_TARGET}/usr/photon/config/crtc-settings 
+/etc/system/config/crtc-settings= ${QNX_TARGET}/usr/photon/config/crtc-settings 
+
+#Shelf
+/etc/photon/shelf/shelf.cfg=${QNX_TARGET}/etc/photon/shelf/shelf.cfg
+
+# Include some photon apps (Photon apps must be included as raw) 
+[+raw perms=+x] pwm
+[+raw perms=+x] pterm
+[+raw perms=+x] phcalc
+[+raw perms=+x] shelf
+[+raw perms=+x] mypro
+[+raw perms=+x] gui-app
+[+raw perms=+x] qt-app
+[+raw perms=+x] pfm
+[+raw perms=+x] bkgdmgr
+[+raw perms=+x] phshutdown 
+[+raw perms=+x] pv
+vsync
+
+##########################################################################
+## Graphics binaries
+###########################################################################
+
+vsync
+egl-gears-lite
+## allow pterm to save its configuration to RAM, if the user changes it.
+[type=link] /.ph/pterm = /dev/shmem
+
+## allow pwm and bkgdmgr to save their configuration to RAM, if the user changes it.
+[type=link] /.ph/wm = /dev/shmem 
+
+##pfm file manager
+[type=link] /.ph/pfm = /dev/shmem 
+
+#shelf
+[type=link] /.ph/shelf = /dev/shmem 
+
+#QT Needs this directory
+#[type=link] /.qtembedded-0 = /dev/shmem 
+[type=link] /tmmp/qtembedded-0 = /dev/shmem 
+#[type=link] / = /dev/shmem 
+#ln -sP /dev/shmem /tmp incase of script 
+##########################################################################
+## Splash screen binary and support files (fonts & images)
+###########################################################################
+/usr/bin/myapp=myapp
+/usr/bin/Led-red=Led-red
+/usr/bin/Led-green=Led-green
+/usr/bin/mypro=mypro
+/usr/bin/gui-app=gui-app
+/usr/bin/qt-app=qt-app
+/usr/bin/gf_splash=gf_splash
+/usr/photon/font_repository/tt0419m_.ttf=${QNX_TARGET}/usr/photon/font_repository/tt0419m_.ttf
+[search=../install/usr/share/backdrops]/usr/share/backdrops/1024x768/default.jpg=1024x768/default.jpg
+[search=../install/usr/share/backdrops]/usr/share/backdrops/1024x768/neutrino_02_1024x768.jpg=1024x768/neutrino_02_1024x768.jpg
+
+###########################################################################
+## uncomment for Graphics driver
+###########################################################################
+#sw-vsync
+
+io-display
+#/etc/system/config/omap35xx.conf=omap35xx.conf
+#/etc/system/config/display.conf={
+#device \{
+#       drivername=omap35xx
+#        vid=0
+#        did=0
+#       modeopts=/etc/system/config/omap35xx.conf
+#        display \{
+#              xres=720
+#              yres=400
+#              refresh=60
+#              pixel_format=rgb565
+#        \}
+#    \}
+#}
+
+cat
+ls
+ksh
+mount
+pipe
+pidin
+uname
+shutdown
+sleep
+slogger
+sloginfo
+slay
+umount
+mkdir
+rmdir
+mv
+cp
+rm
+on
+elvis
+df
+ln
+chmod
+more
+hostname
+use
+kill
+ldd
+devc-pty
+vi
+stty
+date
+###########################################################################
+## END OF BUILD SCRIPT
+###########################################################################
+

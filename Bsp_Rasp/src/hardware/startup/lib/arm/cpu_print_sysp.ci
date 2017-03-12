@@ -1,0 +1,70 @@
+//
+// NOTE: This file is shared between pidin and the startup library.
+// Ordinarily, we'd put it in a library that both code references, but
+// that would complicate building startups in a manner that we don't
+// want. Instead, a copy of this file is placed in both locations
+// and a distinct print_sysp.h file in both directories provide the
+// 'glue' to hook up this code with the particularities of the environment.
+// If you make any changes to this file, you should also copy the new
+// version to the other location (after first checking that no-one's
+// modified the other copy and forgotten to update this location).
+// Normally this won't be a problem since the file will only change in
+// response to system page layout changes and the copy in startup will
+// be modified first and then copied to the pidin tree.
+//
+// This file is in:
+//utils/p/pidin/arm_print_sysp.ci & hardware/startup/lib/arm/cpu_print_sysp.ci
+
+/*
+ * $QNXLicenseC:
+ * Copyright 2008,2009 QNX Software Systems. 
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"). You 
+ * may not reproduce, modify or distribute this software except in 
+ * compliance with the License. You may obtain a copy of the License 
+ * at: http://www.apache.org/licenses/LICENSE-2.0 
+ * 
+ * Unless required by applicable law or agreed to in writing, software 
+ * distributed under the License is distributed on an "AS IS" basis, 
+ * WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+ *
+ * This file may contain contributions from others, either as 
+ * contributors under the License or as licensors under other terms.  
+ * Please review this entire file for other proprietary rights or license 
+ * notices, as well as the QNX Development Suite License Guide at 
+ * http://licensing.qnx.com/license-guide/ for other information.
+ * $
+ */
+
+
+
+#if defined(CPU_PRT_SYSPAGE_RTN)
+
+CPU_PRT_SYSPAGE_RTN(ARM, arm, 1, boxinfo),
+CPU_PRT_SYSPAGE_RTN(ARM, arm, 1, cpu),
+
+#else
+
+static void
+arm_print_boxinfo(void) {
+	struct arm_boxinfo_entry *box = _SYSPAGE_CPU_ENTRY(PSP_SYSPAGE,arm,boxinfo);
+
+	kprintf("  hw_flags:%l\n", box->hw_flags);
+}
+
+
+static void
+arm_print_cpu(void) {
+	struct arm_cpu_entry *cpu = _SYSPAGE_CPU_ENTRY(PSP_SYSPAGE,arm,cpu);
+
+	kprintf("  page_flush:%l page_flush_deferred:%l\n", cpu->page_flush, cpu->page_flush_deferred);
+	kprintf("  upte_ro:%l upte_rw:%l\n", cpu->upte_ro, cpu->upte_rw);
+	kprintf("  kpte_ro:%l kpte_rw:%l\n", cpu->kpte_ro, cpu->kpte_rw);
+	kprintf("  mask_nc:%l\n", cpu->mask_nc);
+	kprintf("  ttb_attr:%l pte_attr=%l\n", cpu->ttb_attr, cpu->pte_attr);
+#if defined(PSP_STARTUP)	
+	kprintf("  mmu_cr1:%l set:%l clr:%x -> %l\n", arm_mmu_getcr(), mmu_cr_set, mmu_cr_clr, (arm_mmu_getcr() & ~mmu_cr_clr) | mmu_cr_set);
+#endif	
+}
+
+#endif

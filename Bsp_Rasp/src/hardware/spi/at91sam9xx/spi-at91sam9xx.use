@@ -1,0 +1,15 @@
+%C Driver for Atmel AT91SAM9xx SPI controllers
+
+Syntax:
+  spi-master -d at91sam9xx [option[,option ...]] ... &
+
+Options (to override autodetected defaults):
+
+  base=address        Base address of SPI controller, default 0xFFFCC000
+  irq=num             IRQ of the interface, default 13
+  clock=num           Master clock (MCK), default 100000000Hz (100 MHz)
+  loopback            Set internal loopback for test
+
+Examples:
+  # Start SPI driver with base address, IRQ
+  spi-master -d at91sam9xx base=0xFFFCC000,irq=13

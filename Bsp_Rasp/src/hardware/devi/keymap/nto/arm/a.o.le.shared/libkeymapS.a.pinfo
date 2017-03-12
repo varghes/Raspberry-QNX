@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle/lib/
+INSTALLNAME=libkeymapS.a
+NAME=libkeymapS.a
+USER=admin
+HOST=DESKTOP-9RD67Q2
+DATE=2016/12/21-20:09:34-IST
+DESCRIPTION=Keyboard mapping common library

@@ -1,0 +1,27 @@
+AT91SAM9XX I2C Driver
+
+%C [options]
+
+Options:
+-p addr     I2C base address
+-i irq      I2C interrupt
+-s slave    Slave address
+-c clock    Master clock
+-v          verbose
+
+Generic options:
+--b bus_speed       Default bus speed. (Default: 100000)
+--m max_msg_len     Minimum length of resmgr receive buffer.
+                    (Default: 128 bytes)
+--n nparts          Minimum number of iov_t's in resmgr context.
+                    (Default: 2)
+--u unit            Unit number. Number to append to device name
+                    prefix (/dev/i2c). (Default: 0)
+
+At91sam9g45:
+    Port 0    i2c-at91sam9xx -p0xFFF84000 -i12 -c133000000 --u0
+    Port 1    i2c-at91sam9xx -p0xFFF88000 -i13 -c133000000 --u1
+
+AT91sam9263:
+    Port 0    i2c-at91sam9xx -p0xfff88000 -i13 -c48000000 --b50000
+

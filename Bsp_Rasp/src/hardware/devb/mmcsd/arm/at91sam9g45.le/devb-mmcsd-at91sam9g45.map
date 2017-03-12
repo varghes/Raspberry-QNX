@@ -1,0 +1,687 @@
+Archive member included because of file (symbol)
+
+C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+                              mmcsd.o (__udivdi3)
+C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_umodsi3.o)
+                              C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o) (__umodsi3)
+C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+                              C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o) (__clz_tab)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:/QNX650/target/qnx6/armle/lib/crt1.o
+LOAD C:/QNX650/target/qnx6/armle/lib/crti.o
+LOAD C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+LOAD mmcsd.o
+LOAD sim.o
+LOAD sim_at91sam9g45.o
+LOAD sim_at91sam9xx.o
+LOAD sim_bs.o
+LOAD sim_dra446.o
+LOAD sim_esdhc.o
+LOAD sim_mmc.o
+LOAD sim_mpc5125.o
+LOAD sim_mx31.o
+LOAD sim_mx35.o
+LOAD sim_omap3.o
+LOAD sim_sdhci.o
+LOAD sim_sta2x11.o
+LOAD C:/QNX650/target/qnx6/armle/usr/lib\libdrvr.a
+LOAD C:/QNX650/target/qnx6/armle/usr/lib\libcache.a
+LOAD C:/QNX650/target/qnx6/armle/lib/libcam.so
+LOAD C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a
+LOAD C:/QNX650/target/qnx6/armle/lib/libc.so
+LOAD C:/QNX650/target/qnx6/armle/lib\libc.a
+LOAD C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a
+LOAD C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtend.o
+LOAD C:/QNX650/target/qnx6/armle/lib/crtn.o
+                0x00100000                PROVIDE (__executable_start, 0x100000)
+                0x001000f4                . = (0x100000 + SIZEOF_HEADERS)
+
+.interp         0x001000f4       0x14
+ *(.interp)
+ .interp        0x001000f4       0x14 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+
+.note           0x00100108       0x18
+ .note          0x00100108       0x18 C:/QNX650/target/qnx6/armle/lib/crtn.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x00100120      0x364
+ *(.hash)
+ .hash          0x00100120      0x364 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00100484      0x760
+ *(.dynsym)
+ .dynsym        0x00100484      0x760 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+
+.dynstr         0x00100be4      0x596
+ *(.dynstr)
+ .dynstr        0x00100be4      0x596 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+
+.gnu.version    0x0010117a        0x0
+ *(.gnu.version)
+ .gnu.version   0x00000000        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+
+.gnu.version_d  0x0010117c        0x0 load address 0x0010117a
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+
+.gnu.version_r  0x0010117c        0x0 load address 0x0010117a
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+
+.rel.dyn        0x0010117c       0x38
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x0010117c       0x20 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x0010119c       0x18 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.plt        0x001011b4      0x2f8
+ *(.rel.plt)
+ .rel.plt       0x001011b4      0x2f8 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x001014ac       0x10
+ *(.init)
+ .init          0x001014ac        0x4 C:/QNX650/target/qnx6/armle/lib/crti.o
+                0x001014ac                _init
+ .init          0x001014b0        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ .init          0x001014b4        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtend.o
+ .init          0x001014b8        0x4 C:/QNX650/target/qnx6/armle/lib/crtn.o
+
+.plt            0x001014bc      0x488
+ *(.plt)
+ .plt           0x001014bc      0x488 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+                0x001014d0                mphys
+                0x001014dc                strcpy
+                0x001014e8                cam_configure
+                0x001014f4                InterruptMask
+                0x00101500                _init_array
+                0x0010150c                simq_reset_dev
+                0x00101518                pthread_create
+                0x00101524                strlwr
+                0x00101530                rsrcdbmgr_detach
+                0x0010153c                pthread_attr_init
+                0x00101548                snprintf
+                0x00101554                munmap
+                0x00101560                sim_alloc_hba
+                0x0010156c                timer_create
+                0x00101578                pthread_setname_np
+                0x00101584                getpid
+                0x00101590                _preinit_array
+                0x0010159c                InterruptUnmask
+                0x001015a8                memcpy
+                0x001015b4                pthread_cancel
+                0x001015c0                perror
+                0x001015cc                puts
+                0x001015d8                __cxa_finalize
+                0x001015e4                __udivsi3
+                0x001015f0                mmap_device_io
+                0x001015fc                strtoul
+                0x00101608                atomic_clr_value
+                0x00101614                mmap
+                0x00101620                InterruptWait
+                0x0010162c                vslogf
+                0x00101638                MsgSendPulse
+                0x00101644                nanosleep
+                0x00101650                calloc
+                0x0010165c                atomic_clr
+                0x00101668                simq_rel_simq
+                0x00101674                simq_timer_settime
+                0x00101680                mem_offset64
+                0x0010168c                fprintf
+                0x00101698                ConnectDetach
+                0x001016b0                pthread_attr_setinheritsched
+                0x001016bc                MsgReceivev
+                0x001016c8                pthread_attr_setstacksize
+                0x001016d4                strncmp
+                0x001016e0                mmap_device_memory
+                0x001016ec                strncpy
+                0x001016f8                sched_get_priority_max
+                0x00101704                atomic_set_value
+                0x00101710                simq_ccb_state
+                0x0010171c                sched_get_priority_min
+                0x00101728                ConnectAttach
+                0x00101734                simq_ccb_enqueue
+                0x00101740                slogf
+                0x0010174c                strdup
+                0x00101758                ChannelDestroy
+                0x00101764                strtoull
+                0x00101770                _init_libc
+                0x0010177c                memset
+                0x00101788                __div0
+                0x00101794                MsgReplyv
+                0x001017a0                ChannelCreate
+                0x001017ac                _fini_array
+                0x001017b8                __divsi3
+                0x001017c4                delay
+                0x001017d0                xpt_async
+                0x001017dc                sprintf
+                0x001017e8                simq_post_ccb
+                0x001017f4                atexit
+                0x00101800                ThreadCtl
+                0x0010180c                getsubopt
+                0x00101818                munmap_device_memory
+                0x00101824                rsrcdbmgr_attach
+                0x00101830                fputc
+                0x0010183c                simq_ccb_dequeue
+                0x00101848                sim_drvr_options
+                0x00101854                simq_scsi_reset
+                0x00101860                fwrite
+                0x0010186c                munmap_device_io
+                0x00101878                xpt_bus_register
+                0x00101884                ultoa
+                0x00101890                simq_dinit
+                0x0010189c                exit
+                0x001018a8                pthread_attr_setschedpolicy
+                0x001018b4                strlen
+                0x001018c0                InterruptDetach
+                0x001018cc                simq_init
+                0x001018d8                pthread_attr_setschedparam
+                0x001018e4                pthread_attr_setdetachstate
+                0x001018f0                pthread_join
+                0x001018fc                TimerTimeout
+                0x00101914                atomic_set
+                0x00101920                vfprintf
+                0x0010192c                InterruptAttachEvent
+                0x00101938                free
+
+.text           0x00101944     0x8e9c
+                0x00101944                _btext = .
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00101944      0x110 C:/QNX650/target/qnx6/armle/lib/crt1.o
+                0x00101944                _start
+ .text          0x00101a54        0x0 C:/QNX650/target/qnx6/armle/lib/crti.o
+ .text          0x00101a54      0x170 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ .text          0x00101bc4     0x326c mmcsd.o
+                0x001025e8                mmc_parse_sd_cid
+                0x00102d78                mmc_send_rwcmd
+                0x00103b20                mmc_dump
+                0x00102128                mmc_parse_mmc_csd
+                0x00104020                mmc_card_ident
+                0x00103310                mmc_get_card_status
+                0x001038b0                mmc_partition_config
+                0x0010276c                _mmc_sendcmd
+                0x00103354                mmc_switch
+                0x00103178                mmc_write_protect
+                0x001033a0                mmc_create_partitions
+                0x00103280                mmc_erase
+                0x00101be8                mmc_parse_sd_csd
+                0x00102f54                mmc_parse_mmc_cid
+ .text          0x00104e30      0xdb4 sim.o
+                0x00105150                mmc_sim_detach
+                0x00105048                mmc_reset_dev
+                0x00105398                mmc_alloc_hba
+                0x001050d8                mmc_scsi_io
+                0x00105870                mmc_sim_args
+                0x00104e30                mmc_sim_action
+                0x001053fc                mmc_sim_attach
+                0x00105208                mmc_sim_init
+                0x00105b14                main
+                0x001050f0                mmc_free_hba
+                0x00105090                mmc_reset_bus
+ .text          0x00105be4     0x156c sim_at91sam9g45.o
+                0x001063b4                hsmci_init
+                0x00105c48                clearFIFO
+ .text          0x00107150      0xb5c sim_at91sam9xx.o
+                0x00107854                mci_init
+ .text          0x00107cac       0x1c sim_bs.o
+                0x00107cb4                bs_init
+                0x00107cac                bs_dinit
+ .text          0x00107cc8        0x0 sim_dra446.o
+ .text          0x00107cc8        0x0 sim_esdhc.o
+ .text          0x00107cc8     0x24e4 sim_mmc.o
+                0x00108eb4                mmc_fake_inquiry
+                0x00108e0c                mmc_mphys
+                0x00109f00                mmc_driver_thread
+                0x001085d8                mmc_write_same
+                0x00108408                mmc_evpd_inquiry
+                0x00109114                mmc_io_cmds
+                0x00108da8                mmc_set_partition
+                0x00107f68                mmc_wait_card_ready
+                0x0010909c                mmc_inquiry
+                0x0010a104                mmc_slogf
+                0x00108f1c                mmc_std_inquiry
+                0x00107e1c                mmc_wait_command
+                0x00108048                mmc_sense
+ .text          0x0010a1ac        0x0 sim_mpc5125.o
+ .text          0x0010a1ac        0x0 sim_mx31.o
+ .text          0x0010a1ac        0x0 sim_mx35.o
+ .text          0x0010a1ac        0x0 sim_omap3.o
+ .text          0x0010a1ac        0x0 sim_sdhci.o
+ .text          0x0010a1ac        0x0 sim_sta2x11.o
+ .text          0x0010a1ac      0x50c C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+                0x0010a1ac                __udivdi3
+ .text          0x0010a6b8       0xcc C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_umodsi3.o)
+                0x0010a6b8                __umodsi3
+ .text          0x0010a784        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+ .text          0x0010a784       0x5c C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtend.o
+ .text          0x0010a7e0        0x0 C:/QNX650/target/qnx6/armle/lib/crtn.o
+ *(.gnu.warning)
+ *(.glue_7t)
+ *(.glue_7)
+ *(.vfp11_veneer)
+ *(.v4_bx)
+
+.fini           0x0010a7e0        0xc
+ *(.fini)
+ .fini          0x0010a7e0        0x4 C:/QNX650/target/qnx6/armle/lib/crti.o
+                0x0010a7e0                _fini
+ .fini          0x0010a7e4        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ .fini          0x0010a7e8        0x4 C:/QNX650/target/qnx6/armle/lib/crtn.o
+                0x0010a7ec                PROVIDE (__etext, .)
+                0x0010a7ec                PROVIDE (_etext, .)
+                0x0010a7ec                PROVIDE (etext, .)
+
+.rodata         0x0010a7ec     0x1d74
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0010a7ec       0xc0 mmcsd.o
+ .rodata.str1.4
+                0x0010a8ac     0x10cf mmcsd.o
+                               0x10d4 (size before relaxing)
+ *fill*         0x0010b97b        0x1 00
+ .rodata        0x0010b97c       0x24 sim.o
+                0x0010b990                sim_module
+ .rodata.str1.4
+                0x0010b9a0      0x271 sim.o
+                                0x274 (size before relaxing)
+ *fill*         0x0010bc11        0x3 00
+ .rodata        0x0010bc14       0x28 sim_at91sam9g45.o
+ .rodata.str1.4
+                0x0010bc3c      0x401 sim_at91sam9g45.o
+                                0x404 (size before relaxing)
+ *fill*         0x0010c03d        0x3 00
+ .rodata.str1.4
+                0x0010c040      0x282 sim_at91sam9xx.o
+                                0x35c (size before relaxing)
+ *fill*         0x0010c2c2        0x2 00
+ .rodata        0x0010c2c4       0x1c sim_mmc.o
+ .rodata.str1.4
+                0x0010c2e0      0x180 sim_mmc.o
+                                0x188 (size before relaxing)
+ .rodata        0x0010c460      0x100 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+                0x0010c460                __clz_tab
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0010c560                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0010c560                __exidx_end = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x0010c560        0x4
+ *(.eh_frame)
+ .eh_frame      0x0010c560        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ .eh_frame      0x0010c560        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtend.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x0010d564                . = (ALIGN (0x1000) + (. & 0xfff))
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0010d564        0x0
+                0x0010d564                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0010d564                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0010d564        0x0
+                0x0010d564                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x0010d564                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0010d564        0x0
+                0x0010d564                PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                0x0010d564                PROVIDE (__fini_array_end, .)
+
+.ctors          0x0010d564        0x8
+ *crtbegin.o(.ctors)
+ .ctors         0x0010d564        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x0010d568        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtend.o
+
+.dtors          0x0010d56c        0x8
+ *crtbegin.o(.dtors)
+ .dtors         0x0010d56c        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x0010d570        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtend.o
+                0x0010d570                __DTOR_END__
+
+.jcr            0x0010d574        0x4
+ *(.jcr)
+ .jcr           0x0010d574        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ .jcr           0x0010d574        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0010d578       0xb8
+ *(.dynamic)
+ .dynamic       0x0010d578       0xb8 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+                0x0010d578                _DYNAMIC
+
+.got            0x0010d630      0x198
+ *(.got.plt)
+ .got.plt       0x0010d630      0x188 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+                0x0010d630                _GLOBAL_OFFSET_TABLE_
+ *(.got)
+ .got           0x0010d7b8       0x10 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+
+.data           0x0010d7c8      0x1cc
+                0x0010d7c8                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0010d7c8        0x0 C:/QNX650/target/qnx6/armle/lib/crt1.o
+ .data          0x0010d7c8        0x0 C:/QNX650/target/qnx6/armle/lib/crti.o
+ .data          0x0010d7c8        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ .data.rel      0x0010d7cc        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+                0x0010d7cc                __dso_handle
+ .data          0x0010d7d0      0x16c mmcsd.o
+                0x0010d8c0                mmc_idents
+                0x0010d7d0                mmc_cmds
+ .data          0x0010d93c       0x38 sim.o
+                0x0010d93c                mmc_sim_entry
+ .data          0x0010d974       0x14 sim_at91sam9g45.o
+                0x0010d980                uswait
+ .data          0x0010d988        0x8 sim_at91sam9xx.o
+ .data          0x0010d990        0x0 sim_bs.o
+ .data          0x0010d990        0x0 sim_dra446.o
+ .data          0x0010d990        0x0 sim_esdhc.o
+ .data          0x0010d990        0x0 sim_mmc.o
+ .data          0x0010d990        0x0 sim_mpc5125.o
+ .data          0x0010d990        0x0 sim_mx31.o
+ .data          0x0010d990        0x0 sim_mx35.o
+ .data          0x0010d990        0x0 sim_omap3.o
+ .data          0x0010d990        0x0 sim_sdhci.o
+ .data          0x0010d990        0x0 sim_sta2x11.o
+ .data          0x0010d990        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+ .data          0x0010d990        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_umodsi3.o)
+ .data          0x0010d990        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+ .data          0x0010d990        0x4 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtend.o
+ .data          0x0010d994        0x0 C:/QNX650/target/qnx6/armle/lib/crtn.o
+
+.data1
+ *(.data1)
+                0x0010d994                _edata = .
+                0x0010d994                PROVIDE (edata, .)
+                0x0010d994                __bss_start = .
+                0x0010d994                __bss_start__ = .
+
+.bss            0x0010d994       0xc0
+ *(.dynbss)
+ .dynbss        0x0010d994       0x58 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+                0x0010d994                errno
+                0x0010d998                __cpu_flags
+                0x0010d99c                _Stderr
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0010d9ec        0x0 C:/QNX650/target/qnx6/armle/lib/crt1.o
+ .bss           0x0010d9ec        0x0 C:/QNX650/target/qnx6/armle/lib/crti.o
+ .bss           0x0010d9ec       0x20 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ .bss           0x0010da0c        0x4 mmcsd.o
+ .bss           0x0010da10       0x38 sim.o
+                0x0010da10                mmc_ctrl
+ .bss           0x0010da48        0x8 sim_at91sam9g45.o
+ .bss           0x0010da50        0x0 sim_at91sam9xx.o
+ .bss           0x0010da50        0x0 sim_bs.o
+ .bss           0x0010da50        0x0 sim_dra446.o
+ .bss           0x0010da50        0x0 sim_esdhc.o
+ .bss           0x0010da50        0x4 sim_mmc.o
+ .bss           0x0010da54        0x0 sim_mpc5125.o
+ .bss           0x0010da54        0x0 sim_mx31.o
+ .bss           0x0010da54        0x0 sim_mx35.o
+ .bss           0x0010da54        0x0 sim_omap3.o
+ .bss           0x0010da54        0x0 sim_sdhci.o
+ .bss           0x0010da54        0x0 sim_sta2x11.o
+ .bss           0x0010da54        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+ .bss           0x0010da54        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_umodsi3.o)
+ .bss           0x0010da54        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+ .bss           0x0010da54        0x0 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtend.o
+ .bss           0x0010da54        0x0 C:/QNX650/target/qnx6/armle/lib/crtn.o
+ *(COMMON)
+                0x0010da54                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0010da54                _bss_end__ = .
+                0x0010da54                __bss_end__ = .
+                0x0010da54                . = ALIGN (0x4)
+                0x0010da54                . = ALIGN (0x4)
+                0x0010da54                __end__ = .
+                0x0010da54                _end = .
+                0x0010da54                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000      0x144
+ *(.comment)
+ .comment       0x00000000       0x12 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ .comment       0x00000012       0x12 mmcsd.o
+ .comment       0x00000024       0x12 sim.o
+ .comment       0x00000036       0x12 sim_at91sam9g45.o
+ .comment       0x00000048       0x12 sim_at91sam9xx.o
+ .comment       0x0000005a       0x12 sim_bs.o
+ .comment       0x0000006c       0x12 sim_dra446.o
+ .comment       0x0000007e       0x12 sim_esdhc.o
+ .comment       0x00000090       0x12 sim_mmc.o
+ .comment       0x000000a2       0x12 sim_mpc5125.o
+ .comment       0x000000b4       0x12 sim_mx31.o
+ .comment       0x000000c6       0x12 sim_mx35.o
+ .comment       0x000000d8       0x12 sim_omap3.o
+ .comment       0x000000ea       0x12 sim_sdhci.o
+ .comment       0x000000fc       0x12 sim_sta2x11.o
+ .comment       0x0000010e       0x12 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+ .comment       0x00000120       0x12 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+ .comment       0x00000132       0x12 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtend.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x20
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+
+.debug_pubnames
+                0x00000000       0x40
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x20 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+ .debug_pubnames
+                0x00000020       0x20 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+
+.debug_info     0x00000000      0x730
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x66b C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+ .debug_info    0x0000066b       0xc5 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+
+.debug_abbrev   0x00000000      0x1e9
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x17f C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x0000017f       0x6a C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+
+.debug_line     0x00000000      0x135
+ *(.debug_line)
+ .debug_line    0x00000000       0xe7 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+ .debug_line    0x000000e7       0x4e C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+
+.debug_frame    0x00000000       0x70
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x48 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+ .debug_frame   0x00000048       0x28 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_umodsi3.o)
+
+.debug_str      0x00000000      0x173
+ *(.debug_str)
+ .debug_str     0x00000000      0x173 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+                                0x1c7 (size before relaxing)
+ .debug_str     0x00000000      0x14a C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+
+.debug_loc      0x00000000      0x6f2
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x6f2 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x110
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x110 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+
+.stack          0x00080000        0x0
+                0x00080000                _stack = .
+ *(.stack)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+OUTPUT(D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/devb-mmcsd-at91sam9g45 elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x10
+ .ARM.attributes
+                0x00000000       0x10 C:/QNX650/target/qnx6/armle/lib/crt1.o
+ .ARM.attributes
+                0x00000010       0x10 C:/QNX650/target/qnx6/armle/lib/crti.o
+ .ARM.attributes
+                0x00000020       0x10 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtbegin.o
+ .ARM.attributes
+                0x00000030       0x10 mmcsd.o
+ .ARM.attributes
+                0x00000040       0x10 sim.o
+ .ARM.attributes
+                0x00000050       0x10 sim_at91sam9g45.o
+ .ARM.attributes
+                0x00000060       0x10 sim_at91sam9xx.o
+ .ARM.attributes
+                0x00000070       0x10 sim_bs.o
+ .ARM.attributes
+                0x00000080       0x10 sim_dra446.o
+ .ARM.attributes
+                0x00000090       0x10 sim_esdhc.o
+ .ARM.attributes
+                0x000000a0       0x10 sim_mmc.o
+ .ARM.attributes
+                0x000000b0       0x10 sim_mpc5125.o
+ .ARM.attributes
+                0x000000c0       0x10 sim_mx31.o
+ .ARM.attributes
+                0x000000d0       0x10 sim_mx35.o
+ .ARM.attributes
+                0x000000e0       0x10 sim_omap3.o
+ .ARM.attributes
+                0x000000f0       0x10 sim_sdhci.o
+ .ARM.attributes
+                0x00000100       0x10 sim_sta2x11.o
+ .ARM.attributes
+                0x00000110       0x10 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_udivdi3.o)
+ .ARM.attributes
+                0x00000120       0x10 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_umodsi3.o)
+ .ARM.attributes
+                0x00000130       0x10 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//libgcc.a(_clz.o)
+ .ARM.attributes
+                0x00000140       0x10 C:/QNX650/host/win32/x86/usr/lib/gcc/arm-unknown-nto-qnx6.5.0/4.4.2//crtend.o
+ .ARM.attributes
+                0x00000150       0x10 C:/QNX650/target/qnx6/armle/lib/crtn.o

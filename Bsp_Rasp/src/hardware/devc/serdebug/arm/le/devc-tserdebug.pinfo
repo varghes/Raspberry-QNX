@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle/sbin/
+INSTALLNAME=devc-tserdebug
+NAME=devc-tserdebug
+USER=admin
+HOST=DESKTOP-9RD67Q2
+DATE=2016/12/21-20:09:20-IST
+DESCRIPTION=Character device driver for the Raspberry processor

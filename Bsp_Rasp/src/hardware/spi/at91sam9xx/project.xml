@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<module name="spi-at91sam9xx">
+  <classification>Driver</classification>
+  <description>
+    <short>Atmel AT91SAM9XX SPI Driver</short>
+    <abstract><![CDATA[
+		The Serial Protocol Interface on the Atmel AT91SAM9XX is protocol compatible 
+with the standard Serial Protocol Interface (SPI). The ATMEL AT91SAM9XX BSP 
+support for the SPI (spi-at91sam9xx) supports Full Duplex communication in 
+Master mode. The SPI provides serial communications between the AT91SAM9XX
+CPU core and peripheral devices.
+	        ]]></abstract>
+  </description>
+  <supports>
+    <availability>
+      <cpu isa="arm">
+        <byteOrder>le</byteOrder>
+      </cpu>
+    </availability>
+  </supports>
+  <contents>
+    <component id="spi-at91sam9xx" generated="true">
+      <location basedir="arm/dll.le">spi-at91sam9xx.so</location>
+    </component>
+  </contents>
+  <requires>
+    <part build="true" location="lib/spi"/>
+    <part build="false" location="hardware/spi"/>
+  </requires>
+</module>

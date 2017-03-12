@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<module name="spi-master">
+    <type>Element</type>
+    <classification>Driver</classification>
+
+    <description>
+        <short>SPI Master</short>
+            <abstract>
+                <![CDATA[controllers.]]>
+            </abstract>
+    </description>
+
+    <supports>
+        <availability>
+            <cpu isa="arm"><byteOrder>le</byteOrder></cpu>
+            <cpu isa="sh"><byteOrder>le</byteOrder></cpu>
+            <cpu isa="ppc"><byteOrder>be</byteOrder></cpu>
+        </availability>
+    </supports>
+
+    <source available="false">
+        <location type="">.</location>
+    </source>
+
+    <GroupOwner>hw</GroupOwner>
+    <RuntimeComponent>Neutrino RTOS</RuntimeComponent>
+
+    <contents>
+        <component id="spi-master" generated="true">
+            <location basedir="{cpu}/{endian}"
+                runtime="true">spi-master</location>
+        </component>
+    </contents>
+
+    <requires>
+        <part build="true" location="lib/spi-master"/>
+    </requires>
+</module>

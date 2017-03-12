@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<module name="devi-headers">
+	<type>Element</type>
+	<classification>Driver</classification>
+
+	<description>
+			<short>Photon Input Manager Headers</short>
+	        <abstract>
+			<![CDATA[Devi-hirun header files.]]>
+	        </abstract>
+	</description>
+
+	<supports>
+		<availability ref="ostargets"/>
+		<availability ref="guihosts"/>
+	</supports>
+
+	<source>
+		<location subdirs="false">.</location>
+		<location subdirs="true">public</location>
+		<location subdirs="true">include</location>
+		<location subdirs="true">hirun</location>
+		<location subdirs="true">lib</location>
+		<location subdirs="true">keymap</location>
+		<location subdirs="true">config</location>		
+	</source>
+	<GroupOwner>os</GroupOwner>
+
+        <contents>
+                <component id="devi-include">
+                        <kind type="header"/>
+			<source>
+                <location basedir="public" subdirs="true" runtime="false">.</location>
+
+			</source>
+                </component>
+                <component id="keyboard mappings">
+					<!-- This is a tad weird but there are makefiles at every level of usr/photon/keyboard -->
+					<!-- To avoid dumping Makefiles in usr and usr/photon we copy from usr/photon/keyboard instead of a basedir of config -->
+					<kind type="config"/>
+					<location type="install">usr/photon/keyboard</location>
+					<location basedir="config/usr/photon/keyboard" subdirs="true" runtime="true"></location>
+                </component>
+        </contents>
+</module>
+

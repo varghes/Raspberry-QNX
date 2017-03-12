@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<module name="libstartup">
+  <classification>SDK</classification>
+  <description>
+    <short>Startup Library</short>
+    <abstract><![CDATA[
+	                The startup library (libstartup.a) contains generic code which is used to prepare a "QNX environment" on a system, prior to the loading of the QNX microkernel (procnto). Some of the code is completely system and platform independent, and is tightly coupled to the way that the kernel operates. Other code is hardware specific, and some of those routines are available to the kernel at runtime, in the form of "kernel callouts". In this sense, the startup library acts as an abstraction layer between the kernel and the hardware, so that the kernel can be kept free of hardware specific code.
+	        ]]></abstract>
+  </description>
+  <supports>
+    <availability>
+      <os name="nto">
+        <cpu isa="ppc">
+          <byteOrder>be</byteOrder>
+          <byteOrder>be.spe</byteOrder>
+        </cpu>
+        <cpu isa="sh">
+          <byteOrder>le</byteOrder>
+        </cpu>
+        <cpu isa="arm">
+          <byteOrder>le</byteOrder>
+          <byteOrder>le.v7</byteOrder>
+        </cpu>
+        <cpu isa="x86"/>
+        <cpu isa="mips">
+          <byteOrder>le</byteOrder>
+          <byteOrder>be</byteOrder>
+        </cpu>
+      </os>
+    </availability>
+    <availability supported="false">
+      <cpu isa="ppc">
+        <byteOrder>be.spe</byteOrder>
+      </cpu>
+    </availability>
+  </supports>
+  <contents>
+    <component id="Archive" generated="true">
+      <location basedir="ppc/a.be">                                libstartup.a                        </location>
+      <location basedir="sh/a.le">                                libstartup.a                        </location>
+      <location basedir="arm/a.le">                                libstartup.a                        </location>
+      <location basedir="arm/a.le.v7">                                libstartup.a                        </location>
+      <location basedir="x86/a">                                libstartup.a                        </location>
+      <location basedir="mips/a.le">                                libstartup.a                        </location>
+      <location basedir="mips/a.be">                                libstartup.a                        </location>
+    </component>
+    <component id="startup-headers" generated=""/>
+  </contents>
+</module>

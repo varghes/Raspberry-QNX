@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle/boot/build/
+INSTALLNAME=bcm2835.build
+NAME=build
+USER=admin
+HOST=DESKTOP-9RD67Q2
+DATE=2017/03/12-22:33:01-IST
+DESCRIPTION=Example build file for startup-bcm2835

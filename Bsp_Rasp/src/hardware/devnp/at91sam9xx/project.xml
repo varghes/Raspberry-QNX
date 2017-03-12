@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<module name="devnp-at91sam9xx">
+  <classification>Driver</classification>
+  <description>
+    <short>Driver for Atmel AT91SAM9XX EMAC Ethernet controllers</short>
+    <abstract><![CDATA[
+                        The devnp-at91sam9xx.so driver controls AT91SAM9XX EMAC compatible Ethernet adapters.
+                ]]></abstract>
+  </description>
+  <supports>
+    <availability>
+      <cpu isa="arm">
+        <byteOrder>le</byteOrder>
+      </cpu>
+    </availability>
+  </supports>
+  <contents>
+    <component id="at91sam9xx" generated="true">
+      <location basedir="arm/dll.le">devnp-at91sam9xx.so</location>
+    </component>
+  </contents>
+  <requires>
+    <part build="true" location="lib/drvr"/>
+  </requires>
+</module>

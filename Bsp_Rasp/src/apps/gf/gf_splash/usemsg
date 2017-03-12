@@ -1,0 +1,13 @@
+%C	- Display a splash screen including uname and network interface information.
+
+Display an image as a background with forground text listing interface MAC/IP addresses,
+uname information and some hints for accessing this instance of QNX.
+
+%C [-d device] [-D dispno] [-l layer_index] [-f font_file] file
+
+-d device	Index of GF device to attach to, in the order that they are
+                encountered in /dev/io-display. Default is the first device.
+-D dispno       Index of the display to attach to. Default is (first display).
+-l layer_index	Index of layer to render to.  Default is the main display layer.
+-f font_file	Font file for text output.  Default is tt0419m_.ttf (Courier10).
+file		The name of the image file to load.		

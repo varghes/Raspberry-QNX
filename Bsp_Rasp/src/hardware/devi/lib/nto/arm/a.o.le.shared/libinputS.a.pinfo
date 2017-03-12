@@ -1,0 +1,8 @@
+STATE=Experimental
+INSTALLDIR=armle/usr/lib/
+INSTALLNAME=libinputS.a
+NAME=libinputS.a
+USER=admin
+HOST=DESKTOP-9RD67Q2
+DATE=2016/12/21-20:09:53-IST
+DESCRIPTION=Input DDK common library
