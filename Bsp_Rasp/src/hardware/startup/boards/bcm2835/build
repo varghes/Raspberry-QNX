@@ -93,11 +93,14 @@
 	
 #QT added
 # PHOTON=/dev/photon	
- QWS_DISPLAY=qnx
+ 
   QWS_KEYBOARD=qnx
 QWS_MOUSE_PROTO=qnx
- XDG_CONFIG_HOME=/tmmp
-TMPDIR=/tmmp
+
+ TMPDIR=/ramdisk
+ XDG_CONFIG_HOME=/ramdisk
+ QWS_DISPLAY=qnx
+
 	    #######################################################################
     ## These env variables are inherited by all the programs which follow
     #######################################################################
@@ -146,12 +149,11 @@ TMPDIR=/tmmp
 	#######################################################################
     ## SD/MMC Driver
     #######################################################################
-    #display_msg Starting SD/MMC driver on interface 1...
+    display_msg Starting SD/MMC driver ...
     #devb-mmcsd-at91sam9g45 blk automount=sda0@dos:/fs/sda:dos:exe=system mmcsd ioport=0xFFF80000,irq=11,bs=port=0,bw=4 disk name=sda   
 
-    #display_msg Starting SD/MMC driver on interface 2...
-    #devb-mmcsd-at91sam9g45 blk automount=sdb0@dos:/fs/sdb:dos:exe=system mmcsd ioport=0xFFFD0000,irq=29,bs=port=1,bw=4 disk name=sdb
-
+    #devb-mmcsd-at91sam9g45 blk automount=hd0t12:/fs/sd0 mmcsd ioport=0xFFFD0000,irq=29 ,bs=port=0,bw=4 disk name=sda 
+  
     #######################################################################
     ## I2C driver
     #######################################################################
@@ -239,8 +241,8 @@ spi-at91sam9xx.so
 ###########################################################################
 ## SD/MMC driver
 ###########################################################################
+devb-mmcsd-at91sam9g45
 
-#devb-mmcsd-at91sam9g45
 libcam.so
 fs-dos.so
 fs-qnx4.so
@@ -424,6 +426,7 @@ primasansmonobts,0@tt2009m_.ttf,PrimaSansMono BT,0,,0020-F002,f,79x170,109K
 [+raw perms=+x] mypro
 [+raw perms=+x] gui-app
 [+raw perms=+x] qt-app
+[+raw perms=+x] qt_demo
 [+raw perms=+x] pfm
 [+raw perms=+x] bkgdmgr
 [+raw perms=+x] phshutdown 
@@ -448,7 +451,7 @@ egl-gears-lite
 #shelf
 [type=link] /.ph/shelf = /dev/shmem 
 
-#QT Needs this directory
+#QT Needs this directory  is it correct? /tmmp/qtembedded-0
 #[type=link] /.qtembedded-0 = /dev/shmem 
 [type=link] /tmmp/qtembedded-0 = /dev/shmem 
 #[type=link] / = /dev/shmem 
@@ -462,6 +465,7 @@ egl-gears-lite
 /usr/bin/mypro=mypro
 /usr/bin/gui-app=gui-app
 /usr/bin/qt-app=qt-app
+/usr/bin/qt_demo=qt_demo
 /usr/bin/gf_splash=gf_splash
 /usr/photon/font_repository/tt0419m_.ttf=${QNX_TARGET}/usr/photon/font_repository/tt0419m_.ttf
 [search=../install/usr/share/backdrops]/usr/share/backdrops/1024x768/default.jpg=1024x768/default.jpg

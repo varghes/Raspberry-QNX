@@ -9,6 +9,10 @@
 			<item value="init_qtime_at91sam9g45"/>
 		</list>
 	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item key="size.width" value="407"/>
+		<item key="size.height" value="180"/>
+	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
 	<section name="completion_proposal_size">

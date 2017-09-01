@@ -4,6 +4,21 @@
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="com.qnx.qcc.toolChain.1677763161">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devc/serdebug/arm/le"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devc/serdebug/arm"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devc/serdebug"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devc"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/install/usr/include/xilinx" removed="true"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devb/mmcsd/arm"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devb/mmcsd"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devb"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devb/mmcsd/chipsets"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/services/blk" removed="true"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devb/include"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devb/mmcsd/public"/>
+<includePath path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/install/usr/include"/>
 <includePath path="C:/QNX650/target/qnx6/usr/include"/>
 <includePath path="C:/QNX650/host/win32/x86/usr/lib/gcc/i486-pc-nto-qnx6.5.0/4.4.2/include"/>
 <definedSymbol symbol="__LANGUAGE_C"/>
@@ -30,6 +45,14 @@
 <definedSymbol symbol="__LITTLEENDIAN__"/>
 <definedSymbol symbol="__LITTLEENDIAN__=1"/>
 <definedSymbol symbol="_MUDFLAPTH"/>
+<definedSymbol symbol="__DEVB_NAME__=devb-mmcsd-at91sam9g45"/>
+<definedSymbol symbol="CAM_PTHREAD_SETNAME=1"/>
+<definedSymbol symbol="NDEBUG=1"/>
+<definedSymbol symbol="VARIANT_at91sam9g45=1"/>
+<definedSymbol symbol="VARIANT_le=1"/>
+<definedSymbol symbol="VARIANT_mmcsd=1"/>
+<definedSymbol symbol="BUILDENV_qss=1"/>
+<definedSymbol symbol="AT91SAM9G45_R1BWORKAROUND=1"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
 <definedSymbol symbol="__SIZE_TYPE__=unsigned int"/>
@@ -135,6 +158,8 @@
 <definedSymbol symbol="i386=1"/>
 <definedSymbol symbol="__PRAGMA_PACK_PUSH_POP__=1"/>
 <definedSymbol symbol="__BIGGEST_ALIGNMENT__=16"/>
+<definedSymbol symbol="__OPTIMIZE__=1"/>
+<definedSymbol symbol="VARIANT_serdebug=1"/>
 </collector>
 </instance>
 </scannerInfo>

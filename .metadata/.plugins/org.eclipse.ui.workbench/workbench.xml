@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
-<window height="728" maximized="true" width="901" x="-35" y="0">
+<window height="735" maximized="true" width="966" x="10" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="365"/>
@@ -20,7 +20,7 @@
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.ui.editor.asm.AsmEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -32,13 +32,23 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="build" partName="build" path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/startup/boards/bcm2835/build" title="build" tooltip="Bsp_Rasp/src/hardware/startup/boards/bcm2835/build" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.ui.DefaultTextEditor" name="build" partName="build" path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/startup/boards/bcm2835/build" title="build" tooltip="Bsp_Rasp/src/hardware/startup/boards/bcm2835/build" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/build"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3401" selectionTopPixel="1327"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5518" selectionTopPixel="2424"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="sim_at91sam9g45.c" partName="sim_at91sam9g45.c" path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.c" title="sim_at91sam9g45.c" tooltip="Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="40704" selectionTopPixel="28480"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="sim_at91sam9g45.h" partName="sim_at91sam9g45.h" path="D:/Study/Raspberry/QNX/ide-4.7-workspace/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.h" title="sim_at91sam9g45.h" tooltip="Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1074" selectionTopPixel="312"/>
 </editor>
 </editors>
 <views>
@@ -86,6 +96,7 @@
 <view id="org.eclipse.ui.views.ResourceNavigator" partName="Navigator"/>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 </viewState>
 </view>
@@ -98,7 +109,9 @@
 <view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Warnings"/>
+<expanded>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -109,7 +122,7 @@
 </viewState>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.DefaultTextEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.qnx.tools.ide.SystemProfiler.ui.SystemProfilerPerspective" id="com.qnx.tools.ide.SystemProfiler.ui.perspective.traceperspective" label="QNX System Profiler"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -459,9 +472,9 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.21771218" ratioLeft="295" ratioRight="1060" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.68012923" ratioLeft="421" ratioRight="198" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<info part="org.eclipse.ui.editorss" ratio="0.3340961" ratioLeft="292" ratioRight="582" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.7156704" ratioLeft="443" ratioRight="176" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.search.ui.views.SearchView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -492,186 +505,173 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devc/serdebug/init.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devc/serdebug/intr.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devc/serdebug/tto.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/init_qtime_bcm2835.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devc/serdebug/externs.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/build"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Bsp_Rasp/src/hardware/devg/bcm2835/display.conf"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Bsp_Rasp/src/hardware/devg/bcm2835/display_m10.conf"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_at91sam9xx.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_at91sam9xx.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_at91sam9xx.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devb/mmcsd/sim.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_bs.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_mx31.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_omap3.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/init_raminfo.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/init_qtime_bcm2835.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/lib/load_ifs.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devc/serdebug/intr.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devc/serdebug/tto.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/lib/arm/hw_serbcm2835debug.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/Bsp_Rasp/src/hardware/startup/lib/arm/callout_debug_bcm2835.S"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/lib/arm/hw_serbcm2835debug.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/build"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/lib/arm/hw_serbcm2835debug.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/build"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/build"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devg/bcm2835/misc.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devg/bcm2835/mem.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devg/bcm2835/init.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devg/bcm2835/data.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devg/bcm2835/core.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devg/bcm2835/context.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devg/bcm2835/mode.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/build"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.h"/>
 </editors>
-<item historyLabel="build" index="0">
-<position info="not_deleted" x="6767" y="0"/>
+<item historyLabel="tto.c" index="2">
+<position info="not_deleted" x="699" y="0"/>
 </item>
-<item historyLabel="display.conf" index="1">
-<position info="not_deleted" x="470" y="0"/>
-</item>
-<item historyLabel="build" index="0">
-<position info="not_deleted" x="6767" y="0"/>
-</item>
-<item historyLabel="display_m10.conf" index="2">
+<item historyLabel="init.c" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="build" index="0">
-<position info="not_deleted" x="6767" y="0"/>
+<item historyLabel="tto.c" index="2">
+<position info="not_deleted" x="699" y="0"/>
 </item>
-<item historyLabel="sim_at91sam9xx.c" index="3">
-<position info="not_deleted" x="593" y="0"/>
-</item>
-<item historyLabel="build" index="0">
-<position info="not_deleted" x="5222" y="0"/>
-</item>
-<item historyLabel="sim_at91sam9xx.h" index="4">
+<item historyLabel="intr.c" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="sim_at91sam9xx.c" index="5">
-<position info="not_deleted" x="15641" y="0"/>
+<item historyLabel="tto.c" index="2">
+<position info="not_deleted" x="699" y="0"/>
 </item>
-<item historyLabel="sim.c" index="6">
-<position info="not_deleted" x="9891" y="18"/>
+<item historyLabel="init_qtime_bcm2835.c" index="3">
+<position info="not_deleted" x="1204" y="13"/>
 </item>
-<item historyLabel="sim_bs.c" index="7">
-<position info="not_deleted" x="1013" y="7"/>
+<item historyLabel="tto.c" index="2">
+<position info="not_deleted" x="157" y="0"/>
 </item>
-<item historyLabel="sim_bs.c" index="7">
-<position info="not_deleted" x="1045" y="10"/>
+<item historyLabel="externs.h" index="4">
+<position info="not_deleted" x="1385" y="0"/>
 </item>
-<item historyLabel="sim_at91sam9g45.h" index="8">
-<position info="not_deleted" x="17065" y="10"/>
+<item historyLabel="build" index="5">
+<position info="not_deleted" x="1725" y="9"/>
 </item>
-<item historyLabel="sim_at91sam9xx.c" index="5">
-<position info="not_deleted" x="12784" y="11"/>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="23876" y="0"/>
 </item>
-<item historyLabel="sim_at91sam9g45.c" index="9">
-<position info="not_deleted" x="22535" y="11"/>
-</item>
-<item historyLabel="sim_at91sam9xx.c" index="5">
-<position info="not_deleted" x="12784" y="11"/>
-</item>
-<item historyLabel="sim_at91sam9xx.h" index="4">
-<position info="not_deleted" x="1541" y="0"/>
-</item>
-<item historyLabel="sim_at91sam9xx.c" index="5">
-<position info="not_deleted" x="12784" y="11"/>
-</item>
-<item historyLabel="build" index="0">
-<position info="not_deleted" x="8441" y="0"/>
-</item>
-<item historyLabel="sim_at91sam9xx.c" index="5">
-<position info="not_deleted" x="12784" y="11"/>
-</item>
-<item historyLabel="main.c" index="10">
+<item historyLabel="sim_mx31.c" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="4809" y="13"/>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="23876" y="0"/>
 </item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="1865" y="13"/>
-</item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="1983" y="18"/>
-</item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="1573" y="18"/>
-</item>
-<item historyLabel="hw_serbcm2835debug.c" index="11">
-<position info="not_deleted" x="984" y="18"/>
-</item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="2023" y="20"/>
-</item>
-<item historyLabel="callout_debug_bcm2835.S" index="12">
-<position info="not_deleted" x="2165" y="20"/>
-</item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="2023" y="20"/>
-</item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="1983" y="18"/>
-</item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="1573" y="18"/>
-</item>
-<item historyLabel="hw_serbcm2835debug.c" index="13">
-<position info="not_deleted" x="984" y="18"/>
-</item>
-<item historyLabel="main.c" index="14">
-<position info="not_deleted" x="1573" y="18"/>
-</item>
-<item historyLabel="build" index="15">
-<position info="not_deleted" x="8441" y="0"/>
-</item>
-<item historyLabel="main.c" index="16">
-<position info="not_deleted" x="1573" y="18"/>
-</item>
-<item historyLabel="hw_serbcm2835debug.c" index="17">
-<position info="not_deleted" x="1213" y="0"/>
-</item>
-<item historyLabel="main.c" index="18">
-<position info="not_deleted" x="1573" y="18"/>
-</item>
-<item historyLabel="build" index="19">
-<position info="not_deleted" x="8441" y="0"/>
-</item>
-<item historyLabel="main.c" index="20">
-<position info="not_deleted" x="5684" y="0"/>
-</item>
-<item historyLabel="build" index="21">
-<position info="not_deleted" x="8441" y="0"/>
-</item>
-<item historyLabel="misc.c" index="22">
+<item historyLabel="sim_omap3.c" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="mem.c" index="23">
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="23876" y="0"/>
+</item>
+<item historyLabel="init_raminfo.c" index="9">
+<position info="not_deleted" x="1060" y="30"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="23876" y="0"/>
+</item>
+<item historyLabel="init_qtime_bcm2835.c" index="10">
+<position info="not_deleted" x="1204" y="13"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="23876" y="0"/>
+</item>
+<item historyLabel="load_ifs.c" index="11">
+<position info="not_deleted" x="1412" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="23876" y="0"/>
+</item>
+<item historyLabel="intr.c" index="12">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="init.c" index="24">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="23876" y="0"/>
 </item>
-<item historyLabel="data.c" index="25">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="tto.c" index="13">
+<position info="not_deleted" x="1027" y="4"/>
 </item>
-<item historyLabel="core.c" index="26">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="23876" y="0"/>
 </item>
-<item historyLabel="context.c" index="27">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="sim_at91sam9g45.h" index="14">
+<position info="not_deleted" x="7723" y="2"/>
 </item>
-<item historyLabel="data.c" index="25">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.c" index="15">
+<position info="not_deleted" x="5824" y="0"/>
 </item>
-<item historyLabel="init.c" index="24">
-<position info="not_deleted" x="1189" y="12"/>
+<item historyLabel="sim_at91sam9g45.h" index="14">
+<position info="not_deleted" x="7834" y="0"/>
 </item>
-<item historyLabel="mode.c" index="28">
-<position info="not_deleted" x="575" y="0"/>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="38600" y="0"/>
 </item>
-<item active="true" historyLabel="build" index="29">
-<position info="not_deleted" x="6449" y="0"/>
+<item historyLabel="build" index="5">
+<position info="not_deleted" x="5518" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="38600" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.h" index="16">
+<position info="not_deleted" x="2576" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="6401" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.h" index="16">
+<position info="not_deleted" x="2290" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="34244" y="15"/>
+</item>
+<item historyLabel="sim_at91sam9g45.h" index="16">
+<position info="not_deleted" x="2539" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="34244" y="15"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="34211" y="20"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="6454" y="20"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="6771" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="34211" y="20"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="34423" y="42"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="37760" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.h" index="16">
+<position info="not_deleted" x="1097" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="38583" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.h" index="16">
+<position info="not_deleted" x="1109" y="4"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="38583" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.h" index="16">
+<position info="not_deleted" x="1109" y="4"/>
+</item>
+<item historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="44609" y="0"/>
+</item>
+<item historyLabel="sim_at91sam9g45.h" index="16">
+<position info="not_deleted" x="1074" y="0"/>
+</item>
+<item active="true" historyLabel="sim_at91sam9g45.c" index="6">
+<position info="not_deleted" x="44609" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -690,50 +690,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mode.c" tooltip="Bsp_Rasp/src/hardware/devg/bcm2835/mode.c">
-<persistable path="/Bsp_Rasp/src/hardware/devg/bcm2835/mode.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="externs.h" tooltip="Bsp_Rasp/src/hardware/devc/serdebug/externs.h">
+<persistable path="/Bsp_Rasp/src/hardware/devc/serdebug/externs.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="context.c" tooltip="Bsp_Rasp/src/hardware/devg/bcm2835/context.c">
-<persistable path="/Bsp_Rasp/src/hardware/devg/bcm2835/context.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tto.c" tooltip="Bsp_Rasp/src/hardware/devc/serdebug/tto.c">
+<persistable path="/Bsp_Rasp/src/hardware/devc/serdebug/tto.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="core.c" tooltip="Bsp_Rasp/src/hardware/devg/bcm2835/core.c">
-<persistable path="/Bsp_Rasp/src/hardware/devg/bcm2835/core.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tedit.c" tooltip="Bsp_Rasp/src/hardware/devc/serdebug/tedit.c">
+<persistable path="/Bsp_Rasp/src/hardware/devc/serdebug/tedit.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="data.c" tooltip="Bsp_Rasp/src/hardware/devg/bcm2835/data.c">
-<persistable path="/Bsp_Rasp/src/hardware/devg/bcm2835/data.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="proto.h" tooltip="Bsp_Rasp/src/hardware/devc/serdebug/proto.h">
+<persistable path="/Bsp_Rasp/src/hardware/devc/serdebug/proto.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="init.c" tooltip="Bsp_Rasp/src/hardware/devg/bcm2835/init.c">
-<persistable path="/Bsp_Rasp/src/hardware/devg/bcm2835/init.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="options.c" tooltip="Bsp_Rasp/src/hardware/devc/serdebug/options.c">
+<persistable path="/Bsp_Rasp/src/hardware/devc/serdebug/options.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mem.c" tooltip="Bsp_Rasp/src/hardware/devg/bcm2835/mem.c">
-<persistable path="/Bsp_Rasp/src/hardware/devg/bcm2835/mem.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Bsp_Rasp/src/hardware/devc/serdebug/main.c">
+<persistable path="/Bsp_Rasp/src/hardware/devc/serdebug/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="misc.c" tooltip="Bsp_Rasp/src/hardware/devg/bcm2835/misc.c">
-<persistable path="/Bsp_Rasp/src/hardware/devg/bcm2835/misc.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="intr.c" tooltip="Bsp_Rasp/src/hardware/devc/serdebug/intr.c">
+<persistable path="/Bsp_Rasp/src/hardware/devc/serdebug/intr.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hw_serbcm2835debug.c" tooltip="Bsp_Rasp/src/hardware/startup/lib/arm/hw_serbcm2835debug.c">
-<persistable path="/Bsp_Rasp/src/hardware/startup/lib/arm/hw_serbcm2835debug.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="init.c" tooltip="Bsp_Rasp/src/hardware/devc/serdebug/init.c">
+<persistable path="/Bsp_Rasp/src/hardware/devc/serdebug/init.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="callout_debug_bcm2835.S" tooltip="Bsp_Rasp/src/hardware/startup/lib/arm/callout_debug_bcm2835.S">
-<persistable path="/Bsp_Rasp/src/hardware/startup/lib/arm/callout_debug_bcm2835.S"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="externs.c" tooltip="Bsp_Rasp/src/hardware/devc/serdebug/externs.c">
+<persistable path="/Bsp_Rasp/src/hardware/devc/serdebug/externs.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="init_system_private.c" tooltip="Bsp_Rasp/src/hardware/startup/lib/init_system_private.c">
+<persistable path="/Bsp_Rasp/src/hardware/startup/lib/init_system_private.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="init_qtime_bcm2835.c" tooltip="Bsp_Rasp/src/hardware/startup/boards/bcm2835/init_qtime_bcm2835.c">
+<persistable path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/init_qtime_bcm2835.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="init_raminfo.c" tooltip="Bsp_Rasp/src/hardware/startup/boards/bcm2835/init_raminfo.c">
+<persistable path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/init_raminfo.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Bsp_Rasp/src/hardware/startup/boards/bcm2835/main.c">
 <persistable path="/Bsp_Rasp/src/hardware/startup/boards/bcm2835/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sim_at91sam9g45.c" tooltip="Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.c">
-<persistable path="/Bsp_Rasp/src/hardware/devb/mmcsd/arm/at91sam9g45.le/sim_at91sam9g45.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sim_sta2x11.c" tooltip="Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_sta2x11.c">
+<persistable path="/Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_sta2x11.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sim.c" tooltip="Bsp_Rasp/src/hardware/devb/mmcsd/sim.c">
-<persistable path="/Bsp_Rasp/src/hardware/devb/mmcsd/sim.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sim_at91sam9xx.h" tooltip="Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_at91sam9xx.h">
-<persistable path="/Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_at91sam9xx.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sim_at91sam9xx.c" tooltip="Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_at91sam9xx.c">
-<persistable path="/Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_at91sam9xx.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="display_m10.conf" tooltip="Bsp_Rasp/src/hardware/devg/bcm2835/display_m10.conf">
-<persistable path="/Bsp_Rasp/src/hardware/devg/bcm2835/display_m10.conf"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sim_omap3.c" tooltip="Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_omap3.c">
+<persistable path="/Bsp_Rasp/src/hardware/devb/mmcsd/chipsets/sim_omap3.c"/>
 </file>
 </mruList>
 </workbench>

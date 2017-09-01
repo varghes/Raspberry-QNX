@@ -26,7 +26,78 @@
 #include <sys/rsrcdbmgr.h>
 #include <sys/rsrcdbmsg.h>
 
+
+ uintptr_t mb_addr;
+#define MB_ADDR 0x40007000
+
+#define MBOX_BASE 0x2000b880
+ uintptr_t	mbox_base;
+
+ uintptr_t	base;
+#define SD_CARD_INTERRUPT       (1 << 8)
+
+#define MBOX_PEEK 0x10
+#define MBOX_READ 0x00
+#define MBOX_WRITE 0x20
+#define MBOX_STATUS 0x18
+#define MBOX_SENDER 0x14
+#define MBOX_CONFIG 0x1c
+
+#define MBOX_FB		1
+#define MBOX_PROP	8
+
+#define MBOX_SUCCESS	0x80000000
+#define MBOX_FULL		0x80000000
+#define	MBOX_EMPTY		0x40000000
+
+//BCM2835
+#define EMMC_BASE		0x20300000
+#define	EMMC_ARG2		0
+#define EMMC_BLKSIZECNT		4
+#define EMMC_ARG1		8
+#define EMMC_CMDTM		0xC
+#define EMMC_RESP0		0x10
+#define EMMC_RESP1		0x14
+#define EMMC_RESP2		0x18
+#define EMMC_RESP3		0x1C
+#define EMMC_DATA		0x20
+#define EMMC_STATUS		0x24
+#define EMMC_CONTROL0		0x28
+#define EMMC_CONTROL1		0x2C
+#define EMMC_INTERRUPT		0x30
+#define EMMC_IRPT_MASK		0x34
+#define EMMC_IRPT_EN		0x38
+#define EMMC_CONTROL2		0x3C
+#define EMMC_CAPABILITIES_0	0x40
+#define EMMC_CAPABILITIES_1	0x44
+#define EMMC_FORCE_IRPT		0x50
+#define EMMC_BOOT_TIMEOUT	0x70
+#define EMMC_DBG_SEL		0x74
+#define EMMC_EXRDFIFO_CFG	0x80
+#define EMMC_EXRDFIFO_EN	0x84
+#define EMMC_TUNE_STEP		0x88
+#define EMMC_TUNE_STEPS_STD	0x8C
+#define EMMC_TUNE_STEPS_DDR	0x90
+#define EMMC_SPI_INT_SPT	0xF0
+#define EMMC_SLOTISR_VER	0xFC
 #define xDMA_DEBUG
+
+
+ //clock
+  uint32_t hci_ver = 0;
+#define SD_GET_CLOCK_DIVIDER_FAIL	0xffffffff
+  // SD Clock Frequencies (in Hz)
+#define SD_CLOCK_ID         400000
+#define SD_CLOCK_NORMAL     25000000
+#define SD_CLOCK_HIGH       50000000
+#define SD_CLOCK_100        100000000
+#define SD_CLOCK_208        208000000
+
+/*********** BCM2835 End ***************/
+
+
+
+
 
 #ifdef DMA_DEBUG
    #define DMA_SHOW_FUNC()         fprintf(stderr,"%s()\n", __func__);

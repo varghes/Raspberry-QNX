@@ -34,6 +34,7 @@ static int stopdma (SIM_HBA *hba)
 	mci_ext_t	*mci;
 	uintptr_t	base;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "stopdma()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -57,6 +58,7 @@ static int startdma (SIM_HBA *hba, int dir)
 	mci_ext_t	*mci;
 	uintptr_t	base;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "startdma()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -85,6 +87,7 @@ static int _mci_detect (SIM_HBA *hba)
 	mci_ext_t	*mci;
 	uintptr_t	base;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_detect()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -102,6 +105,7 @@ static int _mci_interrupt (SIM_HBA *hba, int irq, int resp_type, uint32_t *resp)
 	uint32_t	status, status2;
 	int		intr;
 	
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_interrupt()");
 	intr = MMC_INTR_NONE;
 
 	ext = (SIM_MMC_EXT *)hba->ext;
@@ -217,6 +221,7 @@ static int _mci_setup_dma (SIM_HBA *hba, paddr_t paddr, int len, int dir)
 	uint32_t	mr;
 	uint16_t	blkcnt;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_setup_dma()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -270,6 +275,7 @@ static int _mci_dma_done (SIM_HBA *hba, int dir)
 	mci_ext_t	*mci;
 	uintptr_t	base;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_dma_done()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -293,6 +299,7 @@ static int _mci_setup_pio(SIM_HBA *hba, int len, int dir)
 	uintptr_t	base;
 	int		blkcnt, mr;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_setup_pio()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -323,6 +330,7 @@ static int _mci_pio_done(SIM_HBA *hba, char *buf, int len, int dir)
 	int		i;
 	uint32_t 	*buf32 = (uint32_t *) buf;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_pio_done()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -361,6 +369,7 @@ static int _mci_command (SIM_HBA *hba, mmc_cmd_t *cmd)
 	uint32_t	command;
 	uint32_t	mask = 0;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_command()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -456,6 +465,7 @@ static int _mci_cfg_bus (SIM_HBA *hba, int width, int mmc)
 	uintptr_t	base;
 	uint32_t	value;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_cfg_bus()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -482,6 +492,7 @@ static int _mci_clock (SIM_HBA *hba, int *clock, int high_speed)
 	uint32_t	div;
 	uint32_t	value;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_clock()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -522,6 +533,7 @@ static int _mci_block_size (SIM_HBA *hba, int blksz)
 	uintptr_t	base;
 	uint32_t	value;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_block_size()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -548,6 +560,7 @@ static int _mci_powerup (SIM_HBA *hba)
 	mci_ext_t	*mci;
 	uintptr_t	base;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_powerup()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 	base = mci->base;
@@ -561,6 +574,7 @@ static int _mci_powerdown (SIM_HBA *hba)
 	SIM_MMC_EXT	*ext;
 	mci_ext_t	*mci;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_powerdown()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	cfg = (CONFIG_INFO *)&hba->cfg;
 	mci = (mci_ext_t *)ext->handle;
@@ -575,6 +589,7 @@ static int _mci_shutdown (SIM_HBA *hba)
 	mci_ext_t	*mci;
 	uintptr_t	base;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_mci_shutdown()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	cfg = (CONFIG_INFO *)&hba->cfg;
 	mci = (mci_ext_t *)ext->handle;
@@ -608,6 +623,7 @@ static int mci_args (SIM_HBA *hba, char *options)
 	int         val;
 	int         idx;
 	
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "mci_args()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	mci = (mci_ext_t *)ext->handle;
 
@@ -662,7 +678,7 @@ int mci_init (SIM_HBA *hba)
 	ext = (SIM_MMC_EXT *)hba->ext;
 	cfg = (CONFIG_INFO *)&hba->cfg;
 	hba->verbosity = 4;
-
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "mci_init()");
 	if (!ext->opts) 
 	{
 		slogf (_SLOGC_SIM_MMC, _SLOG_ERROR, "MMC: missing board-specific options\n");
@@ -680,7 +696,7 @@ int mci_init (SIM_HBA *hba)
 	cfg->MemBase[0] = cfg->IOPort_Base[0];
 
 	//printf("\n membase :%x \n",cfg->MemBase[0]);
-	slogf (_SLOGC_SIM_MMC, _SLOG_ERROR, "MMC:  membase: %x \n",cfg->MemBase[0]);
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "MMC:  membase: %x \n",cfg->MemBase[0]);
 	base = (uintptr_t)mmap_device_memory(NULL, cfg->MemLength[0],
 		PROT_READ | PROT_WRITE | PROT_NOCACHE, MAP_SHARED, cfg->MemBase[0]);
 

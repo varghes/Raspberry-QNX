@@ -3947,3 +3947,863 @@ HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.e
 HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
 	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
 	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1b48392),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1b48392)),sourcePriority=16640)
+!SESSION 2017-04-09 07:30:46.236 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-04-09 07:30:47.338
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-04-09 07:31:08.460
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-04-09 07:31:08.460
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+!SESSION 2017-04-09 08:27:34.772 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-04-09 08:27:35.789
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-04-09 08:27:46.580
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-04-09 08:27:46.580
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-07-22 01:07:00.761 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-07-22 01:07:01.783
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-07-22 01:07:15.302
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-07-22 01:07:15.302
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-07-22 02:24:23.568 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-07-22 02:24:24.677
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-07-22 02:24:44.208
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-07-22 02:24:44.208
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-07-22 05:26:24.750 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-07-22 05:26:25.769
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-07-22 05:26:47.773
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-07-22 05:26:47.773
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+!SESSION 2017-07-24 09:30:16.227 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-07-24 09:30:17.311
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-07-24 09:30:43.628
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-07-24 09:30:43.628
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-07-25 07:46:39.510 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-07-25 07:46:40.609
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-07-25 07:46:58.903
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-07-25 07:46:58.903
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@8fbecf),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@8fbecf)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@8fbecf),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@8fbecf)),sourcePriority=16640)
+!SESSION 2017-07-25 09:26:02.917 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-07-25 09:26:03.964
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-07-25 09:26:14.636
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-07-25 09:26:14.636
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-07-26 05:25:39.841 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-07-26 05:25:40.920
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-07-26 05:25:56.464
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-07-26 05:25:56.464
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+!SESSION 2017-07-26 17:28:22.047 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-07-26 17:28:23.707
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-07-26 17:28:47.500
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-07-26 17:28:47.500
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2d0479),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2d0479)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2d0479),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2d0479)),sourcePriority=16640)
+!SESSION 2017-07-27 20:16:23.611 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-07-27 20:16:24.936
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-07-27 20:16:47.953
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-07-27 20:16:47.953
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-08 17:24:49.486 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-08 17:24:50.528
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-08 17:25:07.667
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-08 17:25:07.667
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-08 20:08:21.190 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-08 20:08:22.384
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-08 20:08:37.334
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-08 20:08:37.334
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-09 23:23:45.860 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-09 23:23:47.133
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-09 23:24:12.507
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-09 23:24:12.507
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-10 09:07:11.526 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-10 09:07:12.572
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-10 09:07:30.416
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-10 09:07:30.416
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-10 09:08:25.714 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-10 09:08:26.917
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-10 09:08:37.732
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-10 09:08:37.732
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-10 13:10:27.354 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-10 13:10:28.417
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-10 13:10:40.372
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-10 13:10:40.372
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2d0479),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2d0479)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2d0479),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2d0479)),sourcePriority=16640)
+!SESSION 2017-08-11 00:44:22.837 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-11 00:44:23.851
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-11 00:44:39.257
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-11 00:44:39.257
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@8fbecf),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@8fbecf)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@8fbecf),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@8fbecf)),sourcePriority=16640)
+!SESSION 2017-08-11 01:08:42.794 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-11 01:08:43.794
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-11 01:08:53.794
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-11 01:08:53.794
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-11 01:30:57.443 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-11 01:30:58.476
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-11 01:31:08.339
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-11 01:31:08.339
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-12 06:45:39.620 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-12 06:45:40.861
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-12 06:46:00.584
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-12 06:46:00.584
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+!SESSION 2017-08-13 19:14:16.656 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-13 19:14:17.788
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-13 19:14:41.023
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-13 19:14:41.023
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1270107),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1270107)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1270107),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1270107)),sourcePriority=16640)
+!SESSION 2017-08-13 22:47:53.132 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-13 22:47:54.451
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-13 22:48:12.516
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-13 22:48:12.516
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@cd4544),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@cd4544)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@cd4544),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@cd4544)),sourcePriority=16640)
+!SESSION 2017-08-14 21:59:58.499 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-14 21:59:59.721
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-14 22:01:37.507
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-14 22:01:37.508
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1ce663c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1ce663c)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1ce663c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1ce663c)),sourcePriority=16640)
+!SESSION 2017-08-15 08:33:22.165 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-15 08:33:23.377
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-15 08:33:41.109
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-15 08:33:41.109
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@19a0feb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@19a0feb)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@19a0feb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@19a0feb)),sourcePriority=16640)
+!SESSION 2017-08-16 02:57:53.768 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-16 02:57:54.966
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-16 02:58:10.832
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-16 02:58:10.832
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@19a0feb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@19a0feb)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@19a0feb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@19a0feb)),sourcePriority=16640)
+!SESSION 2017-08-16 03:20:18.442 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-16 03:20:19.503
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-16 03:20:27.925
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-16 03:20:27.925
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@19a0feb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@19a0feb)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@19a0feb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@19a0feb)),sourcePriority=16640)
+!SESSION 2017-08-16 11:08:11.155 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-16 11:08:12.312
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-16 11:08:39.502
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-16 11:08:39.502
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@cd4544),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@cd4544)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@cd4544),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@cd4544)),sourcePriority=16640)
+!SESSION 2017-08-16 12:41:14.044 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-16 12:41:15.215
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-16 12:41:38.497
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-16 12:41:38.497
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@29ea31),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@29ea31)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@29ea31),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@29ea31)),sourcePriority=16640)
+!SESSION 2017-08-17 00:30:39.217 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-17 00:30:40.558
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-17 00:31:03.131
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-17 00:31:03.131
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-17 00:54:04.393 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-17 00:54:05.420
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-17 00:54:17.014
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-17 00:54:17.014
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-17 10:29:32.481 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-17 10:29:33.607
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-17 10:29:51.139
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-17 10:29:51.139
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-18 22:50:17.411 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-18 22:50:18.491
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-18 22:50:34.805
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-18 22:50:34.805
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+!SESSION 2017-08-19 20:47:45.052 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-19 20:47:46.208
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-19 20:48:05.029
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-19 20:48:05.029
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+!SESSION 2017-08-19 20:56:11.673 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-19 20:56:12.723
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-19 20:56:25.786
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-19 20:56:25.787
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1382926),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1382926)),sourcePriority=16640)
+!SESSION 2017-08-19 21:32:00.585 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-19 21:32:01.620
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-19 21:32:16.327
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-19 21:32:16.327
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+!SESSION 2017-08-19 21:35:54.534 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-19 21:35:55.563
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-19 21:36:03.177
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-19 21:36:03.177
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2d0479),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2d0479)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@2d0479),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@2d0479)),sourcePriority=16640)
+!SESSION 2017-08-20 14:27:58.996 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-20 14:28:00.163
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-20 14:28:21.004
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-20 14:28:21.004
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+!SESSION 2017-08-20 15:10:00.469 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-20 15:10:01.614
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-20 15:10:12.874
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-20 15:10:12.874
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+!SESSION 2017-08-20 15:24:55.576 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-20 15:24:56.658
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-20 15:25:05.096
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-20 15:25:05.096
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@19a0feb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@19a0feb)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@19a0feb),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@19a0feb)),sourcePriority=16640)
+!SESSION 2017-08-31 19:07:46.105 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-08-31 19:07:47.199
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-08-31 19:08:05.074
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-08-31 19:08:05.074
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@8fbecf),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@8fbecf)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@8fbecf),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@8fbecf)),sourcePriority=16640)
+!SESSION 2017-09-01 03:05:50.323 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-09-01 03:05:51.440
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-09-01 03:06:08.594
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-09-01 03:06:08.594
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@7e75d2),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@7e75d2)),sourcePriority=16640)
+!SESSION 2017-09-01 19:20:42.124 -----------------------------------------------
+eclipse.buildId=201006232051
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-09-01 19:20:43.255
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-09-01 19:21:08.300
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-09-01 19:21:08.300
+!MESSAGE Conflict for 'AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction':
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1ce663c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1ce663c)),sourcePriority=16640)
+HandlerActivation(commandId=AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.cheatsheets.CheatSheetExtensionFactory:helpMenuAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.cheatsheets.actionSet,org.eclipse.ui.internal.WorkbenchWindow@1ce663c),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1ce663c)),sourcePriority=16640)

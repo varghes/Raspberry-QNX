@@ -42,6 +42,10 @@ static uint32_t * pioa_pdsr = (uint32_t *)MAP_FAILED;
 static uint32_t lli_mphy;
 static uint32_t lli_size;
 
+
+
+
+#ifdef varghese
 /******************************
  *  DMAC functions START
  *****************************/
@@ -51,6 +55,7 @@ static dmac_dev_t * dmac_init (hsmci_ext_t *hsmci)
 	dmac_dev_t	*dmac_dev;
 	int		timeout;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "dmac_init()");
 	/* Allocated memory for channel */
 	dmac_dev = (dmac_dev_t*)calloc(1, sizeof (dmac_dev_t));
 	if (dmac_dev == NULL)
@@ -60,7 +65,7 @@ static dmac_dev_t * dmac_init (hsmci_ext_t *hsmci)
 	}
 
 	/* Map DMAC controller */
-	dmac_dev->dmac = (at91sam9xx_dmac_t *)mmap_device_memory(NULL,0x200,
+	/*dmac_dev->dmac = (at91sam9xx_dmac_t *)mmap_device_memory(NULL,0x200,
 		PROT_READ | PROT_WRITE | PROT_NOCACHE, MAP_SHARED, (uint32_t)(hsmci->dbase));
 
 	if (dmac_dev->dmac == MAP_FAILED)
@@ -68,7 +73,7 @@ static dmac_dev_t * dmac_init (hsmci_ext_t *hsmci)
 		slogf (_SLOGC_SIM_MMC, _SLOG_ERROR, "MMC: DMAC MAP_FAILED\n");
 		free (dmac_dev);
 		return NULL;
-	}
+	}*/
 
 	/* Apply DMAC channel */
 	memset(&req, 0, sizeof(req));
@@ -140,6 +145,7 @@ static void dmac_fini (dmac_dev_t * dmac_dev)
 	rsrc_request_t req;
 	int timeout = 0;
     
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "dmac_fini()");
 	munmap (dmac_dev->lli, (MAX_LLI_NUM) * sizeof(at91sam9xx_dmac_bd_t) ); 
 
 	/* Disable channel */
@@ -181,6 +187,7 @@ static void dmac_fini (dmac_dev_t * dmac_dev)
 
 static int dmac_xfer_start (dmac_dev_t * dmac_dev)
 {
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "dmac_xfer_start()");
 	/* Enable DMA request */
 	/* Copy current TCD image into DMA controller */
 	dmac_dev->dmac->lli[dmac_dev->chid].saddr = 0;
@@ -197,6 +204,7 @@ static int dmac_xfer_start (dmac_dev_t * dmac_dev)
 
 static int dmac_xfer_stop (dmac_dev_t * dmac_dev)
 {
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "dmac_xfer_stop()");
 	/* Suspend DMA transfer */
 	dmac_dev->dmac->cher = (1 << (dmac_dev->chid + 8));
 
@@ -207,6 +215,7 @@ static int dmac_setup_xfer (dmac_dev_t * dmac_dev, paddr_t paddr, int len, int d
 {
 	int i, blknum = len/dmac_dev->blksz;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "dmac_setup_xfer()");
 	dmac_dev->blknum = blknum;
 
 	memset(dmac_dev->lli, 0, blknum * sizeof(at91sam9xx_dmac_bd_t));
@@ -278,6 +287,7 @@ static int dmac_setup_xfer (dmac_dev_t * dmac_dev, paddr_t paddr, int len, int d
 
 	return 0;
 }
+#endif
 /******************************
  *  DMAC functions END
  *****************************/
@@ -293,6 +303,7 @@ static int _hsmci_detect (SIM_HBA *hba)
     uint32_t  cd_wp, cd, wp;
 	uintptr_t	base;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_detect()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	hsmci = (hsmci_ext_t *)ext->handle;
 	base = hsmci->base;
@@ -323,6 +334,8 @@ static int _hsmci_detect (SIM_HBA *hba)
     return MMC_FAILURE;
 }
 
+
+
 static int _hsmci_interrupt (SIM_HBA *hba, int irq, int resp_type, uint32_t *resp)
 {
 	SIM_MMC_EXT	*ext;
@@ -332,6 +345,7 @@ static int _hsmci_interrupt (SIM_HBA *hba, int irq, int resp_type, uint32_t *res
 	int		intr;
 	volatile int	sts;
 
+	fprintf(stderr, "_hsmci_interrupt()\n");
 	intr = MMC_INTR_NONE;
 
 	ext = (SIM_MMC_EXT *)hba->ext;
@@ -401,7 +415,7 @@ static int _hsmci_interrupt (SIM_HBA *hba, int irq, int resp_type, uint32_t *res
 			/* Clean up pending CBTC flags */
 			sts = hsmci->dmac_dev->dmac->ebcisr;
 
-			dmac_xfer_start(hsmci->dmac_dev);
+//			dmac_xfer_start(hsmci->dmac_dev);   dma not planned  yet
 
 			/* For single block, just wait for DMA DONE */
 			if ((hsmci->cmd == MMC_WRITE_BLOCK) || (hsmci->cmd == MMC_READ_SINGLE_BLOCK))
@@ -505,6 +519,7 @@ void clearFIFO (SIM_HBA *hba)
 	int		i;
 	int		mcisr, mcififo;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "clearFIFO()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	hsmci = (hsmci_ext_t *)ext->handle;
 	base = hsmci->base;
@@ -530,6 +545,7 @@ static int _hsmci_setup_dma (SIM_HBA *hba, paddr_t paddr, int len, int dir)
 	uint32_t	mr;
 	uint16_t	blkcnt;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_setup_dma()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	hsmci = (hsmci_ext_t *)ext->handle;
 	base = hsmci->base;
@@ -546,6 +562,7 @@ static int _hsmci_setup_dma (SIM_HBA *hba, paddr_t paddr, int len, int dir)
 
 	hsmci->blknum = blkcnt;
 
+#ifdef DMA_SUPPORTED
 	mr = READ32(MCI_MR) & 0xffff;
 	WRITE32(MCI_MR, mr | (hsmci->blksz << 16));
 	WRITE32(MCI_BLKR, (hsmci->blksz << 16) | blkcnt);
@@ -556,7 +573,7 @@ static int _hsmci_setup_dma (SIM_HBA *hba, paddr_t paddr, int len, int dir)
 	{
 		return -1;
 	}
-
+#endif
 	return (xlen);
 }
 
@@ -566,17 +583,18 @@ static int _hsmci_dma_done (SIM_HBA *hba, int dir)
 	hsmci_ext_t	*hsmci;
 	uintptr_t	base;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_dma_done()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	hsmci = (hsmci_ext_t *)ext->handle;
 	base = hsmci->base;
-
+#ifdef DMA_SUPPORTED
 	/* Disable DMA */
 	dmac_xfer_stop(hsmci->dmac_dev);
 	WRITE32(MCI_DMA, (READ32(MCI_DMA) & (~(DMAEN))));
 
 	/* Disable all incoming interrupt */
 	WRITE32 (MCI_IDR, 0xffffffff);
-
+#endif
 	return MMC_SUCCESS;
 }
 
@@ -590,6 +608,7 @@ static int _hsmci_setup_pio(SIM_HBA *hba, int len, int dir)
 	uintptr_t	base;
 	int blkcnt, mr, sts;
 
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_setup_pio()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	hsmci = (hsmci_ext_t *)ext->handle;
 	base = hsmci->base;
@@ -620,6 +639,8 @@ static int _hsmci_pio_done(SIM_HBA *hba, char *buf, int len, int dir)
 	hsmci_ext_t	*hsmci;
 	uintptr_t	base;
 	int		i;
+
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_pio_done()");
     int timeout = TIMEOUT_LOOPS;
 	uint32_t 	*buf32 = (uint32_t *) buf;
 
@@ -659,6 +680,8 @@ static int _hsmci_command (SIM_HBA *hba, mmc_cmd_t *cmd)
 	uint32_t	mask = 0;
 	int		mcisr;
 
+	fprintf(stderr, "_hsmci_command()\n");
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_command()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	hsmci = (hsmci_ext_t *)ext->handle;
 	base = hsmci->base;
@@ -741,6 +764,8 @@ static int _hsmci_command (SIM_HBA *hba, mmc_cmd_t *cmd)
 	return (MMC_SUCCESS);
 }
 
+
+
 static int _hsmci_cfg_bus (SIM_HBA *hba, int width, int mmc)
 {
 	SIM_MMC_EXT	*ext;
@@ -748,28 +773,18 @@ static int _hsmci_cfg_bus (SIM_HBA *hba, int width, int mmc)
 	uintptr_t	base;
 	uint32_t	value;
 
+	fprintf(stderr, "_hsmci_cfg_bus()\n");
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_cfg_bus()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	hsmci = (hsmci_ext_t *)ext->handle;
 	base = hsmci->base;
-	
-	/* Clean Bit 6 and 7 SDCBUS flag in SDCR register */
-	value = READ32 (MCI_SDCR) & 0xFFFFFF3F;
-	
-	if (width == 8) 
-	{
-		WRITE32 (MCI_SDCR, value | SDCBUS8B);
-	}
-	else if (width == 4) 
-	{
-		WRITE32 (MCI_SDCR, value | SDCBUS4B);
-	}
-	else
-	{
-		WRITE32 (MCI_SDCR, value);
-	}
+	uint32_t control0 = READ32(EMMC_CONTROL0);
+	control0 |= 0x2;
+	WRITE32(EMMC_CONTROL0, control0);
 	
 	return (MMC_SUCCESS);
 }
+
 
 static int _hsmci_clock (SIM_HBA *hba, int *clock, int high_speed)
 {
@@ -779,6 +794,8 @@ static int _hsmci_clock (SIM_HBA *hba, int *clock, int high_speed)
 	uint32_t	div;
 	uint32_t	value;
 
+	fprintf(stderr, "_hsmci_clock()\n");
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_clock()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	hsmci = (hsmci_ext_t *)ext->handle;
 	base = hsmci->base;
@@ -805,19 +822,10 @@ static int _hsmci_clock (SIM_HBA *hba, int *clock, int high_speed)
 	/* Calculate the real clock we will use */
 	*clock = hsmci->clock/(2*(div+1));
 
-	/* Clean up and set the divider */
-	value = READ32 (MCI_MR) & 0xffffff00;
-	WRITE32 ( MCI_MR, value | div);
-
-	delay (10);
-	if (high_speed)
-	{
-		WRITE32 ( MCI_CFG, READ32 (MCI_CFG) | HSMODE);
-	}
-	delay (10);
 
 	return (MMC_SUCCESS);
 }
+
 
 static int _hsmci_block_size (SIM_HBA *hba, int blksz)
 {
@@ -826,6 +834,8 @@ static int _hsmci_block_size (SIM_HBA *hba, int blksz)
 	uintptr_t	base;
 	uint32_t	value;
 
+	fprintf(stderr, " _hsmci_block_size()\n");
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_block_size()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	hsmci = (hsmci_ext_t *)ext->handle;
 	base = hsmci->base;
@@ -838,11 +848,15 @@ static int _hsmci_block_size (SIM_HBA *hba, int blksz)
 	hsmci->blksz = blksz;
 	hsmci->dmac_dev->blksz = blksz;
 
-	value = READ32 (MCI_MR) & 0xffff;
-	WRITE32 (MCI_MR, value | (blksz << 16));
-	
+//	value = READ32 (MCI_MR) & 0xffff;
+//	WRITE32 (MCI_MR, value | (blksz << 16));
+//emmc_reg->blksizcnt = BLOCK_SIZE;
+	value = READ32(EMMC_BLKSIZECNT)& 0xffff;
+	WRITE32( EMMC_BLKSIZECNT, (value | (blksz << 16)));
 	return (MMC_SUCCESS);
 }
+
+
 
 /*
  * Reset host controller and card
@@ -854,21 +868,11 @@ static int _hsmci_powerup (SIM_HBA *hba)
 	hsmci_ext_t	*hsmci;
 	uintptr_t	base;
 
+	fprintf(stderr, " _hsmci_powerup()\n");
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_powerup()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	hsmci = (hsmci_ext_t *)ext->handle;
 	base = hsmci->base;
-
-    /* Enable the pheripheral clock             */
-    out32 (hsmci->pmc_base + PMC_PCER, 1 << hba->cfg.IRQRegisters[0]);
-
-    /* Set the slow clock for initialization         */
-    WRITE32 (MCI_MR, 0xff | WRPROOF| RDPROOF);
-
-    /* Minimal delay 1 ms and 74 clock cycles   */
-    delay(2);
-
-    /* Set Timeout to Max */
-    WRITE32(MCI_DTOR, 0x7f);
 
 	return (MMC_SUCCESS);
 }
@@ -879,12 +883,14 @@ static int _hsmci_powerdown (SIM_HBA *hba)
 	SIM_MMC_EXT	*ext;
 	hsmci_ext_t	*hsmci;
 
+	fprintf(stderr, " _hsmci_powerdown()\n");
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_powerdown()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	cfg = (CONFIG_INFO *)&hba->cfg;
 	hsmci = (hsmci_ext_t *)ext->handle;
 
     /*  Disable peripheral clock    */
-    out32 (hsmci->pmc_base + PMC_PCDR, 1 << hba->cfg.IRQRegisters[0]);
+  //  out32 (hsmci->pmc_base + PMC_PCDR, 1 << hba->cfg.IRQRegisters[0]);
 
 	return (MMC_SUCCESS);
 }
@@ -896,26 +902,16 @@ static int _hsmci_shutdown (SIM_HBA *hba)
 	hsmci_ext_t	*hsmci;
 	uintptr_t	base;
 
+	fprintf(stderr, " _hsmci_shutdown()\n");
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "_hsmci_shutdown()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	cfg = (CONFIG_INFO *)&hba->cfg;
 	hsmci = (hsmci_ext_t *)ext->handle;
 	base = hsmci->base;
 
-	/* Reset and disable controller */
-	WRITE32 (MCI_CR, SWRST|PWSDIS);
-	delay (100);
-	WRITE32 (MCI_CR, MCIDIS | PWSDIS);
-
-	/* Indicate we are done with DMA lib */
-	dmac_fini(hsmci->dmac_dev);
-
-#ifdef AT91SAM9G45_R1BWORKAROUND
-	munmap_device_memory ((void *)pioa_pdsr, 4);
-#endif
-
 	munmap_device_memory ((void *)hsmci->base, cfg->MemLength[0]);
-    munmap_device_io (hsmci->pio_base, AT91SAM9G45_PIO_SIZE);
-    munmap_device_io (hsmci->pmc_base, PMC_SIZE);
+	munmap_device_memory (mbox_base, 0x20);
+	munmap_device_memory (mb_addr, 0x100);
 
 	free(hsmci);
 
@@ -929,6 +925,9 @@ static char *opts[] =
 	NULL
 };
 
+
+/********* No change **********/
+
 static int hsmci_args (SIM_HBA *hba, char *options)
 {
 	SIM_MMC_EXT *ext;
@@ -938,6 +937,8 @@ static int hsmci_args (SIM_HBA *hba, char *options)
 	int         val;
 	int         idx;
 	
+	fprintf(stderr, " hsmci_args()\n");
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "hsmci_args()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	hsmci = (hsmci_ext_t *)ext->handle;
 
@@ -975,6 +976,7 @@ static int hsmci_args (SIM_HBA *hba, char *options)
 			default:
 				slogf (_SLOGC_SIM_MMC, _SLOG_ERROR, 
 					"MMC: Unrecognized options %s\n", value);
+				fprintf(stderr, " MMC: Unrecognized options %s\n", value);
 				return (-1);
 		}
 	}
@@ -987,8 +989,9 @@ int hsmci_init (SIM_HBA *hba)
 	CONFIG_INFO	*cfg;
 	SIM_MMC_EXT	*ext;
 	hsmci_ext_t	*hsmci = NULL;
-	uintptr_t	base;
 
+
+	slogf (_SLOGC_SIM_MMC, _SLOG_INFO, "hsmci_init()");
 	ext = (SIM_MMC_EXT *)hba->ext;
 	cfg = (CONFIG_INFO *)&hba->cfg;
 	hba->verbosity = 4;
@@ -996,29 +999,55 @@ int hsmci_init (SIM_HBA *hba)
 	if (!ext->opts) 
 	{
 		slogf (_SLOGC_SIM_MMC, _SLOG_ERROR, "MMC: missing board-specific options\n");
+		fprintf(stderr, " hsmci_init(): missing board-specific options\n");
 		goto ARGSERR;
 	}
 	
 	if ((hsmci = calloc(1, sizeof(hsmci_ext_t))) == NULL)
 	{
 		slogf (_SLOGC_SIM_MMC, _SLOG_ERROR, "MMC: alloc memory failed\n");
+		fprintf(stderr, " hsmci_init(): malloc memory failed\n");
 		goto ERR;
 	}
 
 	cfg->MemLength[0] = 0x1000;
 	cfg->NumMemWindows = 1;
-	cfg->MemBase[0] = cfg->IOPort_Base[0];
-
-	base = (uintptr_t)mmap_device_memory(NULL, cfg->MemLength[0],
+	//cfg->MemBase[0] = cfg->IOPort_Base[0];
+	cfg->MemBase[0]=EMMC_BASE;
+	hsmci->base = (uintptr_t)mmap_device_memory(NULL, cfg->MemLength[0],
 		PROT_READ | PROT_WRITE | PROT_NOCACHE, MAP_SHARED, cfg->MemBase[0]);
+
+	base =hsmci->base ;
 
 	if (base == (uintptr_t)MAP_FAILED) 
 	{
 		slogf (_SLOGC_SIM_MMC, _SLOG_ERROR, "MMC: mmap_device_memory failed\n");
+		fprintf(stderr, " hsmci_init(): mmap_device_memory failed\n");
 		goto ERR;
 	}
 
-	hsmci->clock     = 133000000;
+	mbox_base = (uintptr_t)mmap_device_memory(NULL, 0x20,
+		PROT_READ | PROT_WRITE | PROT_NOCACHE, MAP_SHARED, MBOX_BASE);
+
+	if (mbox_base == (uintptr_t)MAP_FAILED)
+	{
+		slogf (_SLOGC_SIM_MMC, _SLOG_ERROR, "MMC: mmap_device_memory failed\n");
+		fprintf(stderr, " hsmci_init(): mmap_device_memory failed\n");
+		goto ERR;
+	}
+
+	mb_addr = (uintptr_t)mmap_device_memory(NULL, 0x100,
+		PROT_READ | PROT_WRITE | PROT_NOCACHE, MAP_SHARED, MB_ADDR);
+
+	if (mb_addr == (uintptr_t)MAP_FAILED)
+	{
+		slogf (_SLOGC_SIM_MMC, _SLOG_ERROR, "MMC: mmap_device_memory failed\n");
+		fprintf(stderr, " hsmci_init(): mmap_device_memory failed\n");
+		goto ERR;
+	}
+
+	//hsmci->clock     = 133000000; //correct ?
+	hsmci->clock     =   100000000;
 	hsmci->base      = base;
 	hsmci->hba       = hba;
 	ext->handle    = hsmci;
@@ -1031,8 +1060,10 @@ int hsmci_init (SIM_HBA *hba)
 	ext->set_blksz = _hsmci_block_size;
 	ext->interrupt = _hsmci_interrupt;
 	ext->command   = _hsmci_command;
-	ext->setup_dma = _hsmci_setup_dma;
-	ext->dma_done  = _hsmci_dma_done;
+	//ext->setup_dma = _hsmci_setup_dma; //not yet supported
+	ext->setup_dma=NULL;
+	//ext->dma_done  = _hsmci_dma_done;
+	ext->dma_done=NULL;
 	ext->setup_pio = _hsmci_setup_pio;
 	ext->pio_done  = _hsmci_pio_done;
 	ext->shutdown  = _hsmci_shutdown;
@@ -1041,10 +1072,6 @@ int hsmci_init (SIM_HBA *hba)
 	hsmci->port = -1;
 	hsmci->blksz = BLK_LENGTH;
 	hsmci->slot = 0;
-
-	/* Hardcode DMAC controller base address according to G45 datasheet
-	 * since this driver is specifically for G45 SoC */
-	hsmci->dbase = DMAC_BASE;
 
 	if (!ext->opts)
 	{
@@ -1056,88 +1083,32 @@ int hsmci_init (SIM_HBA *hba)
 		goto ARGSERR;
 	}
 
-	/* 
-	 * Set Src/Dst Request peripheral identifier SRC_PER/DST_PER 
-	 * handshaking interface # according to Table 41-1 DMA Channel Definition
-	 * According to datasheet Table 35-2, the I/O line of mci0_da0 is pa2.
-	 * According to datasheet Table 35-2, the I/O line of mci1_da0 is pa23.
-	 */
-	if (hsmci->port == 0 ) 
-	{
-		hsmci->dintf = 0;
-
-#ifdef AT91SAM9G45_R1BWORKAROUND
-		hsmci->da0_mask = (1<<2);
-#endif
-
-	}
-	else 
-	{
-		hsmci->dintf=13;
-
-#ifdef AT91SAM9G45_R1BWORKAROUND
-		hsmci->da0_mask = (1<<23);
-#endif
-
-	}
-
-#ifdef AT91SAM9G45_R1BWORKAROUND 
-	/* Map G45 PIOA for polling busy signal */
-	pioa_pdsr = (uint32_t *)mmap_device_memory(NULL, 4,
-		PROT_READ | PROT_WRITE | PROT_NOCACHE, MAP_SHARED, PIOA_PDSR);	
-
-	if (pioa_pdsr == (uint32_t *)MAP_FAILED)
-	{
-		slogf (_SLOGC_SIM_MMC, _SLOG_ERROR, "MMC: mmap_device_memory failed\n");
-		goto ERR;
-	}
-#endif
-
-   if ( (uintptr_t) MAP_FAILED == ( hsmci->pio_base = mmap_device_io( AT91SAM9G45_PIO_SIZE, AT91SAM9G45_PIOD_BASE ) ) ) {
-        slogf( _SLOGC_SIM_MMC, _SLOG_ERROR, "MMC: mmap_device_io for PIOD_PDSR failed" );
-        goto ERR;
-    }
-
-    /* Configure CD and WP PIO */
-    InterruptDisable();
-#define CFG_PIO(reg)    out32( hsmci->pio_base + (reg), AT91SAM9G45_MCI_PIO_BITS )
-    CFG_PIO( AT91SAM9G45_PIO_PER );     /* Ensable PIO */
-    CFG_PIO( AT91SAM9G45_PIO_ODR );     /* Disable output */
-    CFG_PIO( AT91SAM9G45_PIO_IFDR );        /* Disable glitch input filter */
-    CFG_PIO( AT91SAM9G45_PIO_CODR );        /* Clear output data */
-    CFG_PIO( AT91SAM9G45_PIO_IDR );     /* Disable interrupt */
-    CFG_PIO( AT91SAM9G45_PIO_MDDR );        /* Disable multi-driver */
-    CFG_PIO( AT91SAM9G45_PIO_PUER );        /* Enable pull-up */
-    CFG_PIO( AT91SAM9G45_PIO_OWDR );        /* Output write disable */
-#undef CFG_PIO
-    InterruptEnable();
 
     /* Configure capacity of controller */
 #ifdef AT91SAM9G45_R1BWORKAROUND
 	ext->hccap |= MMC_HCCAP_BW1 | MMC_HCCAP_BW4 | MMC_HCCAP_DMA | MMC_HCCAP_BW8 | MMC_HCCAP_HS;
 #else	// Use the flag MMC_HCCAP_NOCD_BUSY to inform the MMCSD stack that this hardware has R1B bug
-	ext->hccap |= MMC_HCCAP_BW1 | MMC_HCCAP_BW4 | MMC_HCCAP_DMA | MMC_HCCAP_BW8 | MMC_HCCAP_HS | MMC_HCCAP_NOCD_BUSY;
+//	ext->hccap |= MMC_HCCAP_BW1 | MMC_HCCAP_BW4 | MMC_HCCAP_DMA | MMC_HCCAP_BW8 | MMC_HCCAP_HS | MMC_HCCAP_NOCD_BUSY;
+	ext->hccap |= MMC_HCCAP_BW1 | MMC_HCCAP_BW4  | MMC_HCCAP_BW8 | MMC_HCCAP_HS | MMC_HCCAP_NOCD_BUSY; // No DMA
 #endif
 
-	/* Disable the controller and soft reset */
-	WRITE32(MCI_CR, SWRST | PWSDIS);
-	delay (100);
-	WRITE32(MCI_CR, MCIDIS | PWSDIS); 
+	uint32_t ver = READ32(EMMC_SLOTISR_VER);
+	uint32_t vendor = ver >> 24;
+	uint32_t sdversion = (ver >> 16) & 0xff;
+	uint32_t slot_status = ver & 0xff;
+	printf("EMMC: vendor %x, sdversion %x, slot_status %x\n", vendor, sdversion, slot_status);
+	fprintf(stderr, " hsmci_init(): vendor %x, sdversion %x, slot_status %x\n", vendor, sdversion, slot_status);
 
-	/* Disable DMA */
-	WRITE32(MCI_DMA, (READ32(MCI_DMA) & (~(DMAEN))));
 
-	/* Enable the controller */
-	WRITE32(MCI_CR, MCIEN | PWSDIS);
-	WRITE32(MCI_IDR, 0xffffffff);
+    uint32_t status_reg = READ32(EMMC_STATUS);
+	if((status_reg & (1 << 16)) == 0)
+	{
+		fprintf(stderr, " EMMC: no card inserted\n");
+		return -1;
+	}
+	fprintf(stderr, " EMMC: status: %08x\n", status_reg);
 
-	/* Set Timeout to Max */
-	WRITE32(MCI_DTOR, 0x7f);
 
-	/* Use the lowest baudrate */
-	WRITE32 (MCI_MR, 0xff | WRPROOF| RDPROOF);
-		
-	hsmci->dmac_dev = dmac_init(hsmci);
 
 	if (hsmci->dmac_dev == NULL)
 	{

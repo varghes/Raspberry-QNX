@@ -22,9 +22,6 @@
 			<item value="com.qnx.tools.ide.SystemProfiler.ui.search"/>
 		</list>
 	</section>
-	<section name="">
-		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
-	</section>
 	<section name="org.eclipse.cdt.ui.pdomSearchViewPage">
 	</section>
 	<section name="TextSearchPage">
@@ -36,7 +33,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="debug_devices"/>
+			<item key="textPattern" value="BCM2835_clock"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -50,7 +47,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="no host controller"/>
+			<item key="textPattern" value="da0_mask"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -64,7 +61,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="bcm2835_init"/>
+			<item key="textPattern" value="sd_switch_clock_rate"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -78,7 +75,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="xpt_configure"/>
+			<item key="textPattern" value="MMCSD_IDENT_GO_IDLE"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -92,7 +89,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="_SLOGC_SIM_MMC"/>
+			<item key="textPattern" value="init_raminfo"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -106,7 +103,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="init_bcm2835_debug"/>
+			<item key="textPattern" value="Loading IFS"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -120,7 +117,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="hsmci_init"/>
+			<item key="textPattern" value="MMC_HCCAP_BW4"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -134,7 +131,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="display_char_bcm2835"/>
+			<item key="textPattern" value="init_system_private"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -148,7 +145,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="mci_init"/>
+			<item key="textPattern" value="MMC_RSP_136"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -162,7 +159,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="IOPort_Base"/>
+			<item key="textPattern" value="TRCMD_START"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -176,7 +173,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="init_smp"/>
+			<item key="textPattern" value="BCM2835_DBGU_IE_SR_TXRDY"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -190,7 +187,7 @@
 			<item key="isRegExSearch" value="false"/>
 			<item key="scope" value="0"/>
 			<item key="ignoreCase" value="true"/>
-			<item key="textPattern" value="bs_init"/>
+			<item key="textPattern" value="TIMEOUT_WAIT"/>
 			<list key="workingSets">
 			</list>
 			<list key="fileNamePatterns">
@@ -200,6 +197,9 @@
 				<item value="*.h"/>
 			</list>
 		</section>
+	</section>
+	<section name="">
+		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
 	</section>
 	<section name="org.eclipse.search.text.FileSearchResultPage">
 		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
