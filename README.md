@@ -8,15 +8,24 @@ what is working
 3.Graphics
 4.Some Extent SPI Touch screen ( Unfortunatly Photon is no longer supported in ARM architecture )
 
-Features Yet to be added 1.SPI 2.I2C 3.SD Card 4.USB 5.Network
+Features Yet to be added 
+1.SPI 
+2.I2C 
+3.SD Card 
+4.USB 
+5.Network
 
 code was derived from on at91sam9xx source , so I left the original code for SPI /I2C/USB/Input as it is ,
  hoping that it will be helpfull for the developers ..
 
 I am working on QT Graphics support ..
 
-Compiling 1.Unzip it 2.Create a Empty Project  3.File ->Import -> General -> Existing projects into workspace --> File System 
-( select the folder) 3.Build it
+Compiling 
+1.Unzip it 
+2.Create a Empty Project  
+3.File ->Import -> General -> Existing projects into workspace --> File System 
+( select the folder) 
+3.Build it
 
 QNX OS- Running:
 
@@ -26,11 +35,26 @@ Connect USB to Serial /TTL adapter . power ON
 
 commands: refer .build file .. ls,uname,sloginfo,kill,date
 
-apps: 1.Led-red 2.Led-green 3.egl-gears-lite 4.gf_splash /usr/share/backdrops/1024x768/neutrino_02_1024x768.jpg
+apps: 
+
+1.Led-red 
+2.Led-green 
+3.egl-gears-lite 
+4.gf_splash /usr/share/backdrops/1024x768/neutrino_02_1024x768.jpg
 
 photon apps (enable Photon ,io-graphics, phfont) pls note : QNX stopped supporting photon support on ARM platform..
-1.devc-pty 2.bkgdmgr 3.pwm 4.shelf 5.pterm 
-6.mypro 7.gui-app 8.pfm 9.pv 10.phsutdown 11.phcalc
+
+1.devc-pty 
+2.bkgdmgr 
+3.pwm 
+4.shelf 
+5.pterm 
+6.mypro 
+7.gui-app 
+8.pfm 
+9.pv 
+10.phsutdown 
+11.phcalc
 
 Licensing ( Refer license.txt) 
 
