@@ -36,7 +36,7 @@ Connect USB to Serial /TTL adapter . power ON
    boot.scr
    ifs-bcm2835.bin
    
-![Image boot](https://raw.githubusercontent.com/varghes/Raspberry-QNX/Screenshot/boot.jpg)
+![Image boot](https://github.com/varghes/Raspberry-QNX/blob/master/Screenshot/boot.jpg)
 
 ###commands: 
    refer .build file .. ls,uname,sloginfo,kill,date
@@ -61,8 +61,8 @@ pls note : QNX stopped supporting photon support on ARM platform..
 9.pv 
 10.phsutdown 
 11.phcalc
-![Image Main](https://raw.githubusercontent.com/varghes/Raspberry-QNX/Screenshot/main.jpg)
-![Image calc](https://raw.githubusercontent.com/varghes/Raspberry-QNX/Screenshot/calculator.jpg)
+![Image Main](https://github.com/varghes/Raspberry-QNX/blob/master/Screenshot/main.jpg)
+![Image calc](https://github.com/varghes/Raspberry-QNX/blob/master/Screenshot/calculator.jpg)
 
 Licensing ( Refer license.txt) 
 Source code is distributed under Apache License. 
