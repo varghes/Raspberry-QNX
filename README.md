@@ -62,7 +62,7 @@ pls note : QNX stopped supporting photon support on ARM platform..
 10.phsutdown 
 11.phcalc
 ![Image Main](https://raw.githubusercontent.com/varghes/Raspberry-QNX/Screenshot/main.jpg)
-![Image Main](https://raw.githubusercontent.com/varghes/Raspberry-QNX/Screenshot/calculator.jpg)
+![Image calc](https://raw.githubusercontent.com/varghes/Raspberry-QNX/Screenshot/calculator.jpg)
 
 Licensing ( Refer license.txt) 
 Source code is distributed under Apache License. 
