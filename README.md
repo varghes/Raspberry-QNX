@@ -1,40 +1,69 @@
 # Raspberry-QNX
 Raspberry Pi -QNX  ( BCM2835 )
-QNX Neutrino 6.5.0 sp1 BSP for Raspberry Pi b+ (bcm2835)
+QNX Neutrino 6.5.0 sp1 BSP for Raspberry Pi b+ & Raspberry Pi Zero W(bcm2835) 
 
-what is working 
+##QNX Porting
 1.Kernel Up & fully functioning 
 2.Serial Debug 
 3.Graphics
-4.Some Extent SPI Touch screen ( Unfortunatly Photon is no longer supported in ARM architecture )
+4.Some Extent SPI Touch screen 
 
-Features Yet to be added 1.SPI 2.I2C 3.SD Card 4.USB 5.Network
+Features to be added 1.MMC 2.Ethernet/Wifi
 
-code was derived from on at91sam9xx source , so I left the original code for SPI /I2C/USB/Input as it is ,
- hoping that it will be helpfull for the developers ..
+##Compiling 
+1.Unzip it 
+2.Create a Empty Project  
+3.File ->Import -> General -> Existing projects into workspace --> File System ( select the folder) 
+3.Build it
 
-I am working on QT Graphics support ..
-
-Compiling 1.Unzip it 2.Create a Empty Project  3.File ->Import -> General -> Existing projects into workspace --> File System 
-( select the folder) 3.Build it
-
-QNX OS- Running:
+##QNX OS- Booting:
 
 1.Copy the files of "working_image" to the SD Card.. 
 Connect USB to Serial /TTL adapter . power ON 
 2.Compiled image will be here BSP_Rasp/images
 
-commands: refer .build file .. ls,uname,sloginfo,kill,date
+##Raspberry Pi Zero W 
+1.Use the latest Firmware  https://github.com/raspberrypi/firmware/tree/master/boot
+2.Add the below lines at the end of  "Config.txt" File 
 
-apps: 1.Led-red 2.Led-green 3.egl-gears-lite 4.gf_splash /usr/share/backdrops/1024x768/neutrino_02_1024x768.jpg
+    enable_uart=1
+    dtoverlay=pi3-miniuart-bt
+    init_uart_clock=3000000
+	
+3.Copy these files from Working_image to SD Card
 
-photon apps (enable Photon ,io-graphics, phfont) pls note : QNX stopped supporting photon support on ARM platform..
-1.devc-pty 2.bkgdmgr 3.pwm 4.shelf 5.pterm 
-6.mypro 7.gui-app 8.pfm 9.pv 10.phsutdown 11.phcalc
+   kernel.img
+   boot.scr
+   ifs-bcm2835.bin
+   
+![Image boot](https://raw.githubusercontent.com/varghes/Raspberry-QNX/Screenshot/boot.jpg)
+
+###commands: 
+   refer .build file .. ls,uname,sloginfo,kill,date
+
+###Apps: 
+1.Led-red 
+2.Led-green 
+3.egl-gears-lite 
+4.gf_splash /usr/share/backdrops/1024x768/neutrino_02_1024x768.jpg
+
+##photon apps 
+Enable Photon ,io-graphics, phfont
+pls note : QNX stopped supporting photon support on ARM platform..
+1.devc-pty 
+2.bkgdmgr 
+3.pwm 
+4.shelf 
+5.pterm 
+6.mypro 
+7.gui-app 
+8.pfm 
+9.pv 
+10.phsutdown 
+11.phcalc
+![Image Main](https://raw.githubusercontent.com/varghes/Raspberry-QNX/Screenshot/main.jpg)
+![Image Main](https://raw.githubusercontent.com/varghes/Raspberry-QNX/Screenshot/calculator.jpg)
 
 Licensing ( Refer license.txt) 
-
-1.Source code is distributed under Apache License. 
-2.Raspberry QNX Image file (ifs-bcm2835.bin) is provided strickly for Acadamic use.. 
-Please Note : Final QNX Image distribution requires run time license for each systems.. 
-3.For any commercial use or distibution of any other purpose , please contact QNX licensing@qnx.com
+Source code is distributed under Apache License. 
+Please Note : Final QNX Image distribution requires run time license for each systems.. contact QNX 
